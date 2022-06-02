@@ -158,7 +158,7 @@ MonoBehaviour:
   mainObject: {fileID: 1454627434}
   timer: 0
   timeDiff: 3
-  destoryTime: 8
+  destoryTime: 15
 --- !u!4 &399477821
 Transform:
   m_ObjectHideFlags: 0
