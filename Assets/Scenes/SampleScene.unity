@@ -155,9 +155,10 @@ MonoBehaviour:
   cloud: {fileID: 7831521082096252871, guid: 1ee82ac1ffc39cc47bd631401ed9cf65, type: 3}
   cloud2: {fileID: 3458906947879958110, guid: 77f9af7355392464b8ec694af20ebb7c, type: 3}
   cloud3: {fileID: 3720325751862678836, guid: 18d70e1edb48b3b4092f799e34f265fc, type: 3}
+  mainObject: {fileID: 1454627434}
   timer: 0
-  timeDiff: 2.5
-  destoryTime: 10
+  timeDiff: 3
+  destoryTime: 8
 --- !u!4 &399477821
 Transform:
   m_ObjectHideFlags: 0
@@ -465,3 +466,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0223f77114284b47a0e8b317e71e4dc, type: 3}
+--- !u!1 &1454627434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: c98e3e55370b6eb4baa9896fa03e8926, type: 3}
+  m_PrefabInstance: {fileID: 599567218}
+  m_PrefabAsset: {fileID: 0}

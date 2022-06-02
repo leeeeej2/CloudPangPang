@@ -8,6 +8,7 @@ public class makeCloud : MonoBehaviour
     public GameObject cloud;
     public GameObject cloud2;
     public GameObject cloud3;
+    public GameObject mainObject;
 
     public float timer = 0;
     public float timeDiff = 1.5f;
@@ -45,7 +46,12 @@ public class makeCloud : MonoBehaviour
                 newCloud = Instantiate(cloud3);
             }
 
-            newCloud.transform.position = new Vector3(Random.Range(-10f, 10f), Random.Range(-15f, 15f), Random.Range(25f, 35f));
+            Vector3 mainPosition = mainObject.transform.position;
+            Debug.Log(mainPosition.x - 50);
+            
+            newCloud.transform.position = new Vector3(Random.Range(mainPosition.x - 50f, mainPosition.x + 10f), Random.Range(mainPosition.y - 15f, mainPosition.y + 15f), Random.Range(25f, 30f));
+            
+
             timer = 0;
             Destroy(cloud, destoryTime);
         }
