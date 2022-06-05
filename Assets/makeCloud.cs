@@ -13,6 +13,7 @@ public class makeCloud : MonoBehaviour
     public float timer = 0;
     public float timeDiff = 1.5f;
     public float destoryTime = 10.0f;
+
     void Start()
     {
         
@@ -47,13 +48,13 @@ public class makeCloud : MonoBehaviour
             }
 
             Vector3 mainPosition = mainObject.transform.position;
-            Debug.Log(mainPosition.x - 50);
             
-            newCloud.transform.position = new Vector3(Random.Range(mainPosition.x - 50f, mainPosition.x + 10f), Random.Range(mainPosition.y - 15f, mainPosition.y + 15f), Random.Range(25f, 30f));
+            newCloud.transform.position = new Vector3(Random.Range(-40f, -15f), Random.Range(0, 25f), Random.Range(25f, 30f));
+            newCloud.transform.localScale = new Vector3(Random.Range(0.5f, 1), Random.Range(0.5f, 1), Random.Range(0.5f, 1));
             
-
             timer = 0;
-            Destroy(cloud, destoryTime);
+
+            Destroy(newCloud, destoryTime);
         }
     }
 }
