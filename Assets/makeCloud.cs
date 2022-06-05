@@ -42,8 +42,6 @@ public class makeCloud : MonoBehaviour
 
             whatType = Random.Range(0, 2);
 
-            Debug.Log(whatType);
-
             if(whatType == 0)
             {
                 newCloud = Instantiate(cloud);
