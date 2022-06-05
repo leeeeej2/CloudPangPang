@@ -195,11 +195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98e3e55370b6eb4baa9896fa03e8926, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.47
+      value: 17.62
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98e3e55370b6eb4baa9896fa03e8926, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.69
+      value: -8.85
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98e3e55370b6eb4baa9896fa03e8926, type: 3}
       propertyPath: m_LocalRotation.w
@@ -401,13 +401,44 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.2, y: 9.6, z: -35.3}
+  m_LocalRotation: {x: 0.09918383, y: -0, z: -0, w: 0.9950692}
+  m_LocalPosition: {x: -29.2, y: 23.19, z: -34.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 11.384, y: 0, z: 0}
+--- !u!1 &1041454026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1041454027}
+  m_Layer: 0
+  m_Name: BulletSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1041454027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041454026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -29.3, y: 0.9, z: -10.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1454627438}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1454627434 stripped
 GameObject:
@@ -443,3 +474,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFlat: 1
+--- !u!4 &1454627438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: c98e3e55370b6eb4baa9896fa03e8926, type: 3}
+  m_PrefabInstance: {fileID: 599567218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1454627439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454627434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfbfbbd307613814eb63796021f61400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawnPoint: {fileID: 1041454027}
+  bulletPrefab: {fileID: 2098444482116475196, guid: b97fa5b117643cf49841aace36df8828, type: 3}
+  bulletSpeed: 70
