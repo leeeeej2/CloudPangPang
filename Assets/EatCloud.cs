@@ -6,8 +6,13 @@ public class EatCloud : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        //if(other.GetType() == )
-        Debug.Log(other.GetType());
+        if(other.gameObject.name == "aircraft-A-A")
+        {
+            Debug.Log("collision");
+            this.gameObject.SetActive(false);
+            //Destroy(this);
+        }
+
         //Debug.Log("hihi");
         //Destroy(other);
     }
