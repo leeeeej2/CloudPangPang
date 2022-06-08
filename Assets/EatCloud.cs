@@ -10,6 +10,7 @@ public class EatCloud : MonoBehaviour
         {
             Debug.Log("collision");
             this.gameObject.SetActive(false);
+            Score.score++;
             //Destroy(this);
         }
 
