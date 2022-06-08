@@ -10,8 +10,17 @@ public class bullet : MonoBehaviour
        Destroy(gameObject, life);
     }
 
-    private void OnCollisionEnter(Collision other) {
-        Destroy(other.gameObject);
-        Destroy(gameObject);
+    private void OnCollisionEnter(Collision other) 
+    {
+        if (other.gameObject.name == "cloud_1(Clone)" || other.gameObject.name == "cloud_2(Clone)")
+        {
+            //Debug.Log("collision with cloud");
+            Destroy(gameObject);
+        }
+        else 
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
     }
 }

@@ -53,8 +53,8 @@ public class makeCloud : MonoBehaviour
             }
 
             Vector3 mainPosition = mainObject.transform.position;
-            newCloud.transform.position = new Vector3(Random.Range(xMin , xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
-            //newCloud.transform.position = new Vector3(-30f, 16.3f, 6.5f);
+            //newCloud.transform.position = new Vector3(Random.Range(xMin , xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
+            newCloud.transform.position = new Vector3(-30f, 16.3f, 6.5f);
             float cloudSize = Random.Range(0.2f, 0.5f);
             newCloud.transform.localScale = new Vector3(cloudSize, cloudSize, cloudSize);
             
