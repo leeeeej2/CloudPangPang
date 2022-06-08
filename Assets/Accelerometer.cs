@@ -17,16 +17,7 @@ public class Accelerometer : MonoBehaviour
       
       dirX = Input.acceleration.x * moveSpeed;
       transform.position = new Vector3(Mathf.Clamp(transform.position.x, -16f, 16f), transform.position.y, transform.position.z);
-       //Vector3 tilt = Input.acceleration;
 
-        //if(isFlat)
-        //{
-        //    tilt = Quaternion.Euler(90, 0, 0) * tilt;
-        //}
-
-       //rigid.AddForce(Input.acceleration);
-       //Debug.DrawRay(transform.position + Vector3.up, tilt, Color.cyan);
-       
    }
 
    private void FixedUpdate() {
