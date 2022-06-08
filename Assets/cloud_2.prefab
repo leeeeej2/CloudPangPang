@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1325927641271813896}
   - component: {fileID: 323608948448346597}
   - component: {fileID: 8198409416015036333}
+  - component: {fileID: -7524501806587798788}
+  - component: {fileID: 1964580514584086065}
   m_Layer: 0
   m_Name: cloud_2
   m_TagString: Untagged
@@ -111,3 +113,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 25.732546, y: 13.083755, z: 17.32517}
   m_Center: {x: 0.621036, y: 3.2163858, z: 1.057067}
+--- !u!114 &-7524501806587798788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325927641269819848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a53b1bc1e393b4db669773932805ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &1964580514584086065
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325927641269819848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 12.866274
+  m_Height: 13.0837555
+  m_Direction: 1
+  m_Center: {x: 0.62103605, y: 3.216386, z: 1.0570672}
