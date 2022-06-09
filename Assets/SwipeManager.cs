@@ -7,7 +7,7 @@ public class SwipeManager : MonoBehaviour
     private Vector3 firstPostiion;
     private Vector3 lastPosition;
     
-    private float dragDistance = 0.03f;
+    private float dragDistance = 0.2f;
 
 
     // Start is called before the first frame update
@@ -30,11 +30,23 @@ public class SwipeManager : MonoBehaviour
             else if(touch.phase == TouchPhase.Moved)
             {
                 lastPosition = touch.position;
+                if(Mathf.Abs(lastPosition.x - firstPostiion.x) <= Mathf.Abs(lastPosition.y - firstPostiion.y))
+                    {
+                        //float dist = Mathf.Abs(lastPosition.y - firstPostiion.y);
+                        if(lastPosition.y > firstPostiion.y)
+                        {
+                            //up
+                            transform.position = new Vector3(transform.position.x, transform.position.y + dragDistance, transform.position.z);
+                        }
+                        else{
+                            transform.position = new Vector3(transform.position.x,transform.position.y - dragDistance, transform.position.z);
+                        }
+                    }
             }
             else if(touch.phase == TouchPhase.Ended)
             {
                 lastPosition = touch.position;
-                if(Mathf.Abs(lastPosition.y - firstPostiion.y) > dragDistance)
+                /*if(Mathf.Abs(lastPosition.y - firstPostiion.y) > dragDistance)
                 {
                     if(Mathf.Abs(lastPosition.x - firstPostiion.x) <= Mathf.Abs(lastPosition.y - firstPostiion.y))
                     {
@@ -47,7 +59,7 @@ public class SwipeManager : MonoBehaviour
                             transform.position = new Vector3(transform.position.x,transform.position.y - 2.5f, transform.position.z);
                         }
                     }
-                }
+                }*/
             }
         }
     }

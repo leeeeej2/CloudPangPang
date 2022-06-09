@@ -521,23 +521,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1454627434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7436a3316969cb745a327db50194b445, type: 3}
+  m_Script: {fileID: 11500000, guid: be5d1b9dcb0873e4d85be134d816efe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tap: 0
-  swipeUp: 0
-  swipeDown: 0
---- !u!114 &1454627442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1454627434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd67f2b18898b045a4e983df9bd14e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  swipeControls: {fileID: 1454627441}
-  player: {fileID: 1454627438}
