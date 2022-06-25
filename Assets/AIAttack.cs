@@ -9,8 +9,9 @@ public class AIAttack : MonoBehaviour
     public float timeBetweenAttacks;
     bool alreadyAttacked;
 
-    [SerializeField]
-    GameObject bullet;
+    public Transform AIbulletSpawnPoint;
+    public GameObject AIbulletPrefab;
+    public float AIBulletSpeed = 10;
 
     private void Awake() {
         player = GameObject.Find("aircraft-A-A").transform;
@@ -24,13 +25,14 @@ public class AIAttack : MonoBehaviour
 
     private void AttackPlayer()
     {
-        transform.LookAt(player);
+        //transform.LookAt(player);
 
         if(!alreadyAttacked)
         {
             //Attack
-            Instantiate(bullet, transform.position, Quaternion.identity);
-
+            var aibullet = Instantiate(AIbulletPrefab, AIbulletSpawnPoint.position, AIbulletSpawnPoint.rotation);
+            aibullet.GetComponent<Rigidbody>().velocity = AIbulletSpawnPoint.forward * AIBulletSpeed;
+           
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }

@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class AIBullet : MonoBehaviour
 {
-    float moveSpeed = 7f;
+    public float AIlife = 3;
 
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private void Awake() {
+        Destroy(gameObject, AIlife);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
+    
+    private void OnCollisionEnter(Collision other) {
         
+        if(other.gameObject.name == "aircraft-A-A")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+
     }
 }
