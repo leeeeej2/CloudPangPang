@@ -7,7 +7,7 @@ public class SwipeManager : MonoBehaviour
     private Vector3 firstPostiion;
     private Vector3 lastPosition;
     
-    private float dragDistance = 0.2f;
+    private float dragDistance = 0.25f;
 
 
     // Start is called before the first frame update
