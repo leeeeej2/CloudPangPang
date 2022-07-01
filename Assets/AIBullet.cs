@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class AIBullet : MonoBehaviour
 {
+
     public float AIlife = 3;
+
+    //void Update()
+    //{
+    //    gameObject.GetComponent<BoxCollider>().enabled = true;
+    //}
 
     private void Awake() {
         Destroy(gameObject, AIlife);
@@ -18,5 +24,15 @@ public class AIBullet : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "aircraft-A-A")
+        {
+            Debug.Log("collisionssssss");
+            this.gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
     }
 }
