@@ -9,8 +9,10 @@ public class AIAttack : MonoBehaviour
     public float timeBetweenAttacks;
     bool alreadyAttacked;
 
-    public Transform AIbulletSpawnPoint;
-    public GameObject AIbulletPrefab;
+    public Transform Enemy;
+    public GameObject AIbullet;
+    public Transform shootPoint;
+
     public float AIBulletSpeed = 10;
 
     private void Awake() {
@@ -25,14 +27,16 @@ public class AIAttack : MonoBehaviour
 
     private void AttackPlayer()
     {
-        //transform.LookAt(player);
+        transform.LookAt(player);
+        transform.Rotate(0, 40, 0);
 
         if(!alreadyAttacked)
         {
             //Attack
-            var aibullet = Instantiate(AIbulletPrefab, AIbulletSpawnPoint.position, AIbulletSpawnPoint.rotation);
-            aibullet.GetComponent<Rigidbody>().velocity = AIbulletSpawnPoint.forward * AIBulletSpeed;
-           
+            GameObject currentBullet = Instantiate(AIbullet, shootPoint.position, shootPoint.rotation);
+            Rigidbody rig = currentBullet.GetComponent<Rigidbody>();
+            rig.AddForce(transform.forward * AIBulletSpeed, ForceMode.VelocityChange);
+
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
