@@ -30,6 +30,7 @@ public class AIBullet : MonoBehaviour
     {
         if (other.gameObject.name == "aircraft-A-A")
         {
+            lifeSystem--;
             Debug.Log("collisionssssss");
             this.gameObject.SetActive(false);
             Destroy(gameObject);
