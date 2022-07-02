@@ -612,7 +612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1454627438}
-  timeBetweenAttacks: 0.5
+  timeBetweenAttacks: 1.5
   Enemy: {fileID: 873666282}
   AIbullet: {fileID: 3047972384058124107, guid: ad6132bf175af3c4887b910122f2f458, type: 3}
   shootPoint: {fileID: 1688494174}
@@ -699,7 +699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.09918383, y: -0, z: -0, w: 0.9950692}
-  m_LocalPosition: {x: -29.2, y: 5.5699997, z: -25.929998}
+  m_LocalPosition: {x: -29.2, y: 5.9, z: -25.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1008,7 +1008,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688494173}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0002511069, y: 0.6299953, z: 10.470602}
+  m_LocalPosition: {x: 0, y: 0.6, z: 10.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
