@@ -8,18 +8,21 @@ public class MakeEnemy : MonoBehaviour
     public GameObject enemy;
     public GameObject mainObject;
 
-    public float xMax = -15f;
-    public float xMin = -50f;
+    public float xMax = 20f;
+    public float xMin = -20f;
 
     public float yMax = 0;
-    public float yMin = 25f;
+    public float yMin = 0;
 
-    public float zMax = 25f;
-    public float zMin = 30f;
+    public float zMax = -10f;
+    public float zMin = 10f;
 
     GameObject newEnemy;
     public static bool isDie = false;
     bool isFirst = true;
+
+    public float timer = 0;
+    public float timeDiff = 1.5f;
 
     void Start()
     {
@@ -41,10 +44,23 @@ public class MakeEnemy : MonoBehaviour
 
         if (isDie)
         {
-            Debug.Log("new enemy");
-            newEnemy = Instantiate(enemy);
-            newEnemy.transform.position = new Vector3(-28.8f, 17.3f, 23.8f);
-            isDie = false;
+            timer += Time.deltaTime;
+
+            if(timer > timeDiff)
+            {
+                Vector3 mainLocation = mainObject.transform.position;
+
+                Debug.Log("new enemy");
+
+                newEnemy = Instantiate(enemy);
+
+                //newEnemy.transform.position = new Vector3(-28.8f, 17.3f, 23.8f);
+                Vector3 newLocation = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
+                newEnemy.transform.position = new Vector3(mainLocation.x + newLocation.x, 17.3f, 23.8f);
+
+                isDie = false;
+                timer = 0;
+            }
         }
     }
 }
