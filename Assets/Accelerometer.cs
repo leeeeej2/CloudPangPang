@@ -35,7 +35,7 @@ public class Accelerometer : MonoBehaviour
         /////////for pc control
         if (Input.GetKey(KeyCode.A))
         {
-            Debug.Log("left");
+            //Debug.Log("left");
             //Debug.Log(transform.position.x);
             if (transform.position.x > -16)
             {
@@ -46,7 +46,7 @@ public class Accelerometer : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            Debug.Log("right");
+            //Debug.Log("right");
             //Debug.Log(transform.position.x);
             if(transform.position.x < 16)
             {
@@ -57,14 +57,14 @@ public class Accelerometer : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            Debug.Log("up");
+            //Debug.Log("up");
             moveY++;
             transform.position = new Vector3(moveX, moveY, moveZ);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            Debug.Log("down");
+            //Debug.Log("down");
             moveY--;
             transform.position = new Vector3(moveX, moveY, moveZ);
         }

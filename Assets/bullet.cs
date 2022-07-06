@@ -20,11 +20,11 @@ public class bullet : MonoBehaviour
         }
         else if (other.gameObject.name == "Enemy(Clone)")
         {
-            Debug.Log("attack");
+            //Debug.Log("attack");
 
             if (Score.enemyDie == 0)
             {
-                Debug.Log("collision with cloud");
+                //Debug.Log("collision with cloud");
 
                 Score.score += 3;
                 Score.enemyDie = 2;

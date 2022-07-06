@@ -35,7 +35,7 @@ public class AIBullet : MonoBehaviour
                 HealthManager.lifeSystem--;
             }
 
-            Debug.Log("collisionssssss");
+            //Debug.Log("collisionssssss");
             this.gameObject.SetActive(false);
             Destroy(gameObject);
         }

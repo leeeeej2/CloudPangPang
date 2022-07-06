@@ -8,7 +8,7 @@ public class EatCloud : MonoBehaviour
     {
         if(other.gameObject.name == "aircraft-A-A")
         {
-            Debug.Log("collision");
+            //Debug.Log("collision");
             this.gameObject.SetActive(false);
             Score.score++;
             //Destroy(this);
