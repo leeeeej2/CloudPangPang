@@ -9,11 +9,6 @@ public class SwipeManager : MonoBehaviour
     
     private float dragDistance = 0.25f;
     
-    public float maxCameraX = 1f;
-    public float minCameraX = 0;
-    public float maxCameraY = 1f;
-    public float minCameraY = 0;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -66,30 +61,6 @@ public class SwipeManager : MonoBehaviour
                     }
                 }*/
             }
-
-            Vector3 worldpos = Camera.main.WorldToViewportPoint(this.transform.position);
-
-            if (worldpos.x < minCameraX)
-            {
-                worldpos.x = minCameraX;
-            }
-
-            if (worldpos.y < minCameraY)
-            {
-                worldpos.y = minCameraY;
-            }
-
-            if (worldpos.x > maxCameraX)
-            {
-                worldpos.x = maxCameraX;
-            }
-
-            if (worldpos.y > maxCameraY)
-            {
-                worldpos.y = maxCameraY;
-            }
-
-            this.transform.position = Camera.main.ViewportToWorldPoint(worldpos);
         }
     }
 }
