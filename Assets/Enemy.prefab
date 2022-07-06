@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  timeBetweenAttacks: 1.5
+  timeBetweenAttacks: 2.5
   Enemy: {fileID: 8749659244773829422}
   AIbullet: {fileID: 3047972384058124107, guid: ad6132bf175af3c4887b910122f2f458, type: 3}
   shootPoint: {fileID: 5792904519541699848}
