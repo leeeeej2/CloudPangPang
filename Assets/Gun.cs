@@ -8,9 +8,10 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
 
-    public void Fire() {
-        //if(GunManager.IsPressed)
-        {
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        { 
             Debug.Log("Pressed");
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
