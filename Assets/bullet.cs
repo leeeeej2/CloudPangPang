@@ -18,15 +18,18 @@ public class bullet : MonoBehaviour
             //Debug.Log("collision with cloud");
             Destroy(gameObject);
         }
-        else if(other.gameObject.name == "Enemy")
+        else if (other.gameObject.name == "Enemy(Clone)")
         {
             Debug.Log("attack");
 
             if (Score.enemyDie == 0)
             {
+                Debug.Log("collision with cloud");
+
                 Score.score += 3;
                 Score.enemyDie = 2;
                 Destroy(other.gameObject);
+                MakeEnemy.isDie = true;
             }
             else
             {
@@ -36,7 +39,7 @@ public class bullet : MonoBehaviour
 
             Destroy(gameObject);
         }
-        else 
+        else
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
