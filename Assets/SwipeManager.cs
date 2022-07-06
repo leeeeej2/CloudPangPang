@@ -7,7 +7,7 @@ public class SwipeManager : MonoBehaviour
     private Vector3 firstPostiion;
     private Vector3 lastPosition;
     
-    private float dragDistance = 0.3f;
+    private float dragDistance = 0.25f;
     
     public float maxCameraX = 1f;
     public float minCameraX = 0;

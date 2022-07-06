@@ -7,7 +7,7 @@ public class Accelerometer : MonoBehaviour
     public bool isFlat = true;
     private Rigidbody rigid;
     float dirX;
-    float moveSpeed = 25f;
+    float moveSpeed = 20f;
 
     private void Start() {
        rigid = GetComponent<Rigidbody>();
