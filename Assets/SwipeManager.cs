@@ -29,37 +29,37 @@ public class SwipeManager : MonoBehaviour
             else if (touch.phase == TouchPhase.Moved)
             {
                 lastPosition = touch.position;
+
                 if (Mathf.Abs(lastPosition.x - firstPostiion.x) <= Mathf.Abs(lastPosition.y - firstPostiion.y))
                 {
-                    //float dist = Mathf.Abs(lastPosition.y - firstPostiion.y);
                     if (lastPosition.y > firstPostiion.y)
                     {
                         //up
-                        transform.position = new Vector3(transform.position.x, transform.position.y + dragDistance, transform.position.z);
+                        if (!DoNotOut.upMove)
+                        {
+                            transform.position = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z);
+                        }
+                        else
+                        {
+                            transform.position = new Vector3(transform.position.x, transform.position.y + dragDistance, transform.position.z);
+                        }
                     }
                     else
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y - dragDistance, transform.position.z);
+                        if (!DoNotOut.downMove)
+                        {
+                            transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+                        }
+                        else
+                        {
+                            transform.position = new Vector3(transform.position.x, transform.position.y - dragDistance, transform.position.z);
+                        }
                     }
                 }
             }
             else if (touch.phase == TouchPhase.Ended)
             {
                 lastPosition = touch.position;
-                /*if(Mathf.Abs(lastPosition.y - firstPostiion.y) > dragDistance)
-                {
-                    if(Mathf.Abs(lastPosition.x - firstPostiion.x) <= Mathf.Abs(lastPosition.y - firstPostiion.y))
-                    {
-                        if(lastPosition.y > firstPostiion.y)
-                        {
-                            //up
-                            transform.position = new Vector3(transform.position.x, transform.position.y + 2.5f, transform.position.z);
-                        }
-                        else{
-                            transform.position = new Vector3(transform.position.x,transform.position.y - 2.5f, transform.position.z);
-                        }
-                    }
-                }*/
             }
         }
     }

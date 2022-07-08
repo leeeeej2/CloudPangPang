@@ -19,6 +19,7 @@ public class Accelerometer : MonoBehaviour
     public float maxCameraY = 1f;
     public float minCameraY = 0;
     /////////
+
     private void Start() {
         rigid = GetComponent<Rigidbody>();
 
@@ -28,43 +29,32 @@ public class Accelerometer : MonoBehaviour
     }
 
     private void Update() {
-
         dirX = Input.acceleration.x * moveSpeed;
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -16f, 16f), transform.position.y, transform.position.z);
+        
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        //transform.position = new Vector3(Mathf.Clamp(transform.position.x, -16f, 16f), transform.position.y, transform.position.z);        
         
         /////////for pc control
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && DoNotOut.leftMove)
         {
-            //Debug.Log("left");
-            //Debug.Log(transform.position.x);
-            if (transform.position.x > -16)
-            {
-                moveX--;
-                transform.position = new Vector3(moveX, moveY, moveZ);
-            }
+             moveX--;
+             transform.position = new Vector3(moveX, moveY, moveZ);          
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && DoNotOut.rightMove)
         {
-            //Debug.Log("right");
-            //Debug.Log(transform.position.x);
-            if(transform.position.x < 16)
-            {
-                moveX++;
-                transform.position = new Vector3(moveX, moveY, moveZ);
-            }
+             moveX++;
+             transform.position = new Vector3(moveX, moveY, moveZ);           
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && DoNotOut.upMove)
         {
-            //Debug.Log("up");
             moveY++;
             transform.position = new Vector3(moveX, moveY, moveZ);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && DoNotOut.downMove)
         {
-            //Debug.Log("down");
             moveY--;
             transform.position = new Vector3(moveX, moveY, moveZ);
         }
@@ -73,6 +63,18 @@ public class Accelerometer : MonoBehaviour
     }
 
 private void FixedUpdate() {
-       rigid.velocity = new Vector3(dirX, 0, 0);
-   }
+       
+        if(!DoNotOut.rightMove)
+        {
+            rigid.velocity = new Vector3(-1, 0, 0);
+        }
+        else if(!DoNotOut.leftMove)
+        {
+            rigid.velocity = new Vector3(1, 0, 0);
+        }
+        else
+        {
+            rigid.velocity = new Vector3(dirX, 0, 0);
+        }
+    }
 }
