@@ -14,10 +14,9 @@ public class EatCloud : MonoBehaviour
 
     GameObject original;
     GameObject cloud;
-    GameObject cloudCount;
 
     private void Awake() {
-        original = GameObject.Find("Clouds");
+        original = GameObject.Find("CloudCount");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -28,29 +27,25 @@ public class EatCloud : MonoBehaviour
             {
                 whiteCount++;
                 cloud = original.transform.GetChild(0).gameObject;
-                cloudCount = cloud.transform.GetChild(0).gameObject;
-                cloudCount.GetComponent<Text>().text = whiteCount.ToString();
+                cloud.GetComponent<Text>().text = whiteCount.ToString();
             }
             else if(currentCol == makeCloud.yellow)
             {
                 yellowCount++;
                 cloud = original.transform.GetChild(1).gameObject;
-                cloudCount = cloud.transform.GetChild(0).gameObject;
-                cloudCount.GetComponent<Text>().text = yellowCount.ToString();
+                cloud.GetComponent<Text>().text = yellowCount.ToString();
             }
             else if(currentCol == makeCloud.pink)
             {
                 pinkCount++;
                 cloud = original.transform.GetChild(2).gameObject;
-                cloudCount = cloud.transform.GetChild(0).gameObject;
-                cloudCount.GetComponent<Text>().text = pinkCount.ToString();
+                cloud.GetComponent<Text>().text = pinkCount.ToString();
             }
             else if(currentCol == makeCloud.blue)
             {
                 blueCount++;
                 cloud = original.transform.GetChild(3).gameObject;
-                cloudCount = cloud.transform.GetChild(0).gameObject;
-                cloudCount.GetComponent<Text>().text = blueCount.ToString();
+                cloud.GetComponent<Text>().text = blueCount.ToString();
             }
             
             //Debug.Log("collision");
