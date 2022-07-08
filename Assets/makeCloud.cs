@@ -24,10 +24,10 @@ public class makeCloud : MonoBehaviour
 
     GameObject newCloud;
 
-    Color white;
-    Color yellow;
-    Color pink;
-    Color blue;
+    public static Color white;
+    public static Color yellow;
+    public static Color pink;
+    public static Color blue;
 
     public Color[] myColors;
     public Color pickColor;
