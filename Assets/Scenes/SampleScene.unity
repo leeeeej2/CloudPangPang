@@ -384,8 +384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6075eae9e618d7048b59c2787985a51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloud: {fileID: 8143511328414543963, guid: 96499e1d8fb76724da8c7a410228b398, type: 3}
-  cloud2: {fileID: 8143511328414543963, guid: 96499e1d8fb76724da8c7a410228b398, type: 3}
+  cloud: {fileID: 1034813286923442649, guid: 378e5c9e20c1096478c8d5db684c2cf2, type: 3}
+  cloud2: {fileID: 1034813286923442649, guid: 378e5c9e20c1096478c8d5db684c2cf2, type: 3}
   mainObject: {fileID: 1041454026}
   mainObject2: {fileID: 1454627434}
   xMax: -15
