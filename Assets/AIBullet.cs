@@ -23,7 +23,10 @@ public class AIBullet : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
-
+        else if (other.gameObject.name == "cloud_1(Clone)" || other.gameObject.name == "cloud_2(Clone)")
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -37,6 +40,10 @@ public class AIBullet : MonoBehaviour
 
             //Debug.Log("collisionssssss");
             this.gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else if (other.gameObject.name == "cloud_1(Clone)" || other.gameObject.name == "cloud_2(Clone)")
+        {
             Destroy(gameObject);
         }
     }

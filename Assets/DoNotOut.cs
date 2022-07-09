@@ -14,6 +14,9 @@ public class DoNotOut : MonoBehaviour
     float yRange = 0;
     float xRange = 0;
 
+    float yOffset = 0;
+    float xOffset = 0;
+
     public static bool rightMove = true;
     public static bool leftMove = true;
     public static bool upMove = true;
@@ -31,11 +34,14 @@ public class DoNotOut : MonoBehaviour
         xRange = 2 * Camera.main.orthographicSize;//2 * (Screen.height / 10) / 2;
         yRange = xRange * Camera.main.aspect;
 
+        xOffset = xRange + transform.localScale.x;
+        yOffset = (yRange / 2) - (transform.localScale.y);
+
         //xRange = Screen.width / 2;
         //yRange = Screen.height / 2;
         //xRange = Mathf.Abs(1 - curPosition.x);
         //yRange = Mathf.Abs(1 - curPosition.y);
-        
+
         //Debug.Log("x range");
         //Debug.Log(xRange);
         //Debug.Log("y range");
@@ -50,7 +56,7 @@ public class DoNotOut : MonoBehaviour
         //Debug.Log("Y");
         //Debug.Log(Mathf.Abs(transform.position.y - firstPosition.y));
 
-        if (Mathf.Abs(transform.position.x - firstPosition.x) > (xRange + transform.localScale.x))
+        if (Mathf.Abs(transform.position.x - firstPosition.x) > xOffset)
         {
             //Debug.Log("X OUT");
 
@@ -71,7 +77,7 @@ public class DoNotOut : MonoBehaviour
             rightMove = true;
         }
 
-        if (Mathf.Abs(transform.position.y - firstPosition.y) > ((yRange / 2) - (transform.localScale.y)))
+        if (Mathf.Abs(transform.position.y - firstPosition.y) > yOffset)
         {
             //Debug.Log("Y OUT");
 

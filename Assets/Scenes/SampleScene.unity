@@ -384,9 +384,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6075eae9e618d7048b59c2787985a51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloud: {fileID: 3735328249620873890, guid: 110ce32efd25dde45bb11992fc3cc62e, type: 3}
-  cloud2: {fileID: 1325927641269819848, guid: a830baa9347b059469289d43871fbebc, type: 3}
-  mainObject: {fileID: 1454627434}
+  cloud: {fileID: 1034813286923442649, guid: 378e5c9e20c1096478c8d5db684c2cf2, type: 3}
+  cloud2: {fileID: 1034813286923442649, guid: 378e5c9e20c1096478c8d5db684c2cf2, type: 3}
+  mainObject: {fileID: 1041454026}
+  mainObject2: {fileID: 1454627434}
   xMax: -15
   xMin: -50
   yMax: 0
@@ -395,7 +396,8 @@ MonoBehaviour:
   zMin: 30
   timer: 0
   timeDiff: 3
-  destoryTime: 15
+  destoryTime: 20
+  destoryOffset: 5
   myColors:
   - {r: 0, g: 0, b: 0, a: 0}
   - {r: 0, g: 0, b: 0, a: 0}
@@ -1526,7 +1528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 11, y: -11.999908}
+  m_AnchoredPosition: {x: 11, y: -11.999878}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1417869777
