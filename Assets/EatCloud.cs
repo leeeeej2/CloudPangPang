@@ -11,9 +11,9 @@ public class EatCloud : MonoBehaviour
     public static int blueCount = 0;
 
     public static int totalCount = 0;
-    public int ammoCount = 0;
+    public static int ammoCount = 0;
 
-    public int perCloud = 2;
+    public static int perCloud = 2;
 
     Color currentCol;
 
