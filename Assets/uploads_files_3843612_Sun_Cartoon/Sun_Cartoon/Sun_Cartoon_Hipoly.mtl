@@ -1,0 +1,33 @@
+newmtl Eye
+Kd 0 0 0
+Ke 0 0 0
+Ka 1 1 1
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Light
+Kd 0.992157 0.670588 0.00784314
+Ke 0 0 0
+Ka 0.75 0.75 0.75
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Sun
+Kd 0.968627 0.823529 0.0156863
+Ke 0 0 0
+Ka 0.75 0.75 0.75
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
