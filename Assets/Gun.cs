@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
@@ -8,11 +9,19 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
 
+    GameObject ammo;
+
+    private void Awake() {
+        ammo = GameObject.Find("ammoCount");
+    }
     private void Update()
     {
         //if (Input.GetMouseButtonDown(0))
-        if(ManageFire.IsPressed)
+        if(ManageFire.IsPressed && (EatCloud.ammoCount > 0))
         { 
+            EatCloud.totalCount -= EatCloud.perCloud;
+            EatCloud.ammoCount = (EatCloud.totalCount/EatCloud.perCloud);
+            ammo.GetComponent<Text>().text = EatCloud.ammoCount.ToString();
             ManageFire.IsPressed = false;
             Debug.Log("Pressed");
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
