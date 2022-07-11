@@ -10,13 +10,20 @@ public class EatCloud : MonoBehaviour
     public static int pinkCount = 0;
     public static int blueCount = 0;
 
+    public static int totalCount = 0;
+    public int ammoCount = 0;
+
+    public int perCloud = 2;
+
     Color currentCol;
 
     GameObject original;
     GameObject cloud;
+    GameObject ammo;
 
     private void Awake() {
         original = GameObject.Find("CloudCount");
+        ammo = GameObject.Find("ammoCount");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -47,7 +54,13 @@ public class EatCloud : MonoBehaviour
                 cloud = original.transform.GetChild(3).gameObject;
                 cloud.GetComponent<Text>().text = blueCount.ToString();
             }
-            
+
+            totalCount++;
+            if(totalCount%perCloud == 0)
+            {
+                ammoCount = (totalCount/perCloud);
+                ammo.GetComponent<Text>().text = ammoCount.ToString();
+            }
             //Debug.Log("collision");
             this.gameObject.SetActive(false);
             Score.score++;
