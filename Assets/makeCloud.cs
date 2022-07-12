@@ -121,6 +121,7 @@ public class makeCloud : MonoBehaviour
             //newCloud.gameObject.SetActive(false);
 
             newCloud.transform.position = newPosition;
+            newCloud.transform.rotation = new Quaternion(0, 180, 0, 0);
 
             BoxCollider hihi = newCloud.GetComponent<BoxCollider>();
 
@@ -134,42 +135,43 @@ public class makeCloud : MonoBehaviour
 
             //usually x is big and y is small
 
+
             if (xOffsetCloud < 0)
             {
                 //changePosition.x = hihi.center.x + xOffsetCloud; ///
-                changePosition.x = newPosition.x + (xOffsetCloud / 4); ///
+                changePosition.x = newPosition.x - (xOffsetCloud / 4); ///
                 Debug.Log("x change + : " + changePosition.x);
             }
             else
             {
                 //changePosition.x = hihi.center.x - xOffsetCloud; 
-                changePosition.x = newPosition.x - (xOffsetCloud / 4); 
+                changePosition.x = newPosition.x + (xOffsetCloud / 4); 
                 Debug.Log("x change - : " + changePosition.x);
             }
 
             if (yOffsetCloud < 0)
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;/////
-                changePosition.y = newPosition.y - (yOffsetCloud / 4);/////
+                changePosition.y = newPosition.y - (yOffsetCloud / 3);/////
                 Debug.Log("y change + : " + changePosition.y);
             }
             else
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;
-                changePosition.y = newPosition.y + (yOffsetCloud / 4);
+                changePosition.y = newPosition.y + (yOffsetCloud / 3);
                 Debug.Log("y change - : " + changePosition.y);
             }
 
             if (zOffsetCloud < 0)
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;/////
-                changePosition.z = newPosition.z + (zOffsetCloud / 4);/////
+                changePosition.z = newPosition.z - (zOffsetCloud / 2);/////
                 Debug.Log("z change + : " + changePosition.z);
             }
             else
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;
-                changePosition.z = newPosition.z - (zOffsetCloud / 4);
+                changePosition.z = newPosition.z + (zOffsetCloud / 2);
                 Debug.Log("z change - : " + changePosition.z);
             }
 

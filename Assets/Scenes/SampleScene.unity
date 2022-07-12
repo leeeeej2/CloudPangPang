@@ -394,7 +394,7 @@ MonoBehaviour:
   zMax: 25
   zMin: 30
   timer: 0
-  timeDiff: 3
+  timeDiff: 1
   destoryTime: 30
   destoryOffset: 5
   myColors:
