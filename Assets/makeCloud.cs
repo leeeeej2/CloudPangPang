@@ -6,7 +6,7 @@ public class makeCloud : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cloud;
-    public GameObject cloud2;
+    //public GameObject cloud2;
     public GameObject mainObject;
     public GameObject mainObject2;
 
@@ -93,24 +93,24 @@ public class makeCloud : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        int whatType = 0;
+        //int whatType = 0;
 
         if(timer > timeDiff)
         {
             //x -10 ~ 10
             //y -15 ~ 15
         
-            whatType = Random.Range(0, 2);
+            //whatType = Random.Range(0, 2);
 
-            if(whatType == 0)
-            {
+            //if(whatType == 0)
+            //{
                 newCloud = Instantiate(cloud);
-            }
+            //}
             
-            if(whatType == 1)
-            {
-                newCloud = Instantiate(cloud2);
-            }
+            //if(whatType == 1)
+            //{
+            //    newCloud = Instantiate(cloud2);
+            //}
 
             pickColor = myColors[Random.Range(0, myColors.Length)];
             newCloud.GetComponent<MeshRenderer>().material.color = pickColor;
