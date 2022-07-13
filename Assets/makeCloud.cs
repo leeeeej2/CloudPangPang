@@ -129,9 +129,9 @@ public class makeCloud : MonoBehaviour
             float yOffsetCloud = newPosition.y - hihi.center.y;
             float zOffsetCloud = newPosition.z - hihi.center.z;
 
-            Debug.Log("new cloud position : " + newCloud.transform.position);
-            Debug.Log("first collider center : " + hihi.center);
-            Debug.Log("x offset : " + xOffsetCloud + "y offset : " + yOffsetCloud);
+            //Debug.Log("new cloud position : " + newCloud.transform.position);
+            //Debug.Log("first collider center : " + hihi.center);
+            //Debug.Log("x offset : " + xOffsetCloud + "y offset : " + yOffsetCloud);
 
             //usually x is big and y is small
 
@@ -140,52 +140,52 @@ public class makeCloud : MonoBehaviour
             {
                 //changePosition.x = hihi.center.x + xOffsetCloud; ///
                 changePosition.x = newPosition.x - (xOffsetCloud  / 8); ///
-                Debug.Log("x change + : " + changePosition.x);
+                //Debug.Log("x change + : " + changePosition.x);
             }
             else
             {
                 //changePosition.x = hihi.center.x - xOffsetCloud; 
                 changePosition.x = newPosition.x + (xOffsetCloud / 8); 
-                Debug.Log("x change - : " + changePosition.x);
+                //Debug.Log("x change - : " + changePosition.x);
             }
 
             if (yOffsetCloud < 0)
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;/////
                 changePosition.y = newPosition.y - (yOffsetCloud / 5.5f);/////
-                Debug.Log("y change + : " + changePosition.y);
+                //Debug.Log("y change + : " + changePosition.y);
             }
             else
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;
                 changePosition.y = newPosition.y + (yOffsetCloud / 5.5f);
-                Debug.Log("y change - : " + changePosition.y);
+                //Debug.Log("y change - : " + changePosition.y);
             }
 
             if (zOffsetCloud < 0)
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;/////
                 changePosition.z = newPosition.z - (zOffsetCloud / 8);/////
-                Debug.Log("z change + : " + changePosition.z);
+                //Debug.Log("z change + : " + changePosition.z);
             }
             else
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;
                 changePosition.z = newPosition.z + (zOffsetCloud / 8);
-                Debug.Log("z change - : " + changePosition.z);
+                //Debug.Log("z change - : " + changePosition.z);
             }
 
             newCloud.transform.position = changePosition;
 
             BoxCollider hihi2 = newCloud.GetComponent<BoxCollider>();
 
-            Debug.Log("collider center : " + hihi2.center);
+            //Debug.Log("collider center : " + hihi2.center);
 
             //newCloud.gameObject.SetActive(true);
 
-            Debug.Log("change Position : " + changePosition);
+            //Debug.Log("change Position : " + changePosition);
 
-            Debug.Log("current Position : " + newCloud.transform.position);
+            //Debug.Log("current Position : " + newCloud.transform.position);
 
             //Debug.Log("change Position : " + changePosition);
 
