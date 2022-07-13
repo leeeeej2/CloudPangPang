@@ -1634,7 +1634,7 @@ MonoBehaviour:
   zMax: -10
   zMin: 10
   timer: 0
-  timeDiff: 1.5
+  timeDiff: 5
 --- !u!4 &1374828402
 Transform:
   m_ObjectHideFlags: 0
