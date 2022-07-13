@@ -16,19 +16,24 @@ public class EatCloud : MonoBehaviour
     public static int perCloud = 2;
 
     public static bool stopPink = false;
-    
+    public int PinkNum = 1;
+    public static bool stopBlue = false;
+
     Color currentCol;
 
     GameObject original;
     GameObject cloud;
     GameObject ammo;
     GameObject heart;
+    GameObject bomb;
     
     private void Awake() {
         original = GameObject.Find("CloudCount");
         ammo = GameObject.Find("ammoCount");
         heart = GameObject.Find("Giveheart");
+        bomb = GameObject.Find("Bomb");
     }
+
     private void Update() {
         if(pinkCount == 0)
         {
@@ -36,7 +41,15 @@ public class EatCloud : MonoBehaviour
             cloud.GetComponent<Text>().text = pinkCount.ToString();
             heart.transform.position = new Vector3(heart.transform.position.x, -236, heart.transform.position.z);
         }
+
+        if(blueCount == 0)
+        {
+            cloud = original.transform.GetChild(3).gameObject;
+            cloud.GetComponent<Text>().text = blueCount.ToString();
+            bomb.transform.position = new Vector3(bomb.transform.position.x, -236, bomb.transform.position.z);
+        }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.name == "aircraft-A-A")
@@ -61,7 +74,7 @@ public class EatCloud : MonoBehaviour
                     pinkCount++;
                     cloud = original.transform.GetChild(2).gameObject;
                     cloud.GetComponent<Text>().text = pinkCount.ToString();
-                    if(pinkCount == 1)
+                    if(pinkCount == PinkNum)
                     {
                         stopPink = true;
                         heart.transform.position = new Vector3(heart.transform.position.x, 0, heart.transform.position.z);
@@ -71,9 +84,17 @@ public class EatCloud : MonoBehaviour
             }
             else if(currentCol == makeCloud.blue)
             {
-                blueCount++;
-                cloud = original.transform.GetChild(3).gameObject;
-                cloud.GetComponent<Text>().text = blueCount.ToString();
+                if(!stopBlue)
+                {
+                    blueCount++;
+                    cloud = original.transform.GetChild(3).gameObject;
+                    cloud.GetComponent<Text>().text = blueCount.ToString();
+                    if(blueCount == 1)
+                    {
+                        bomb.transform.position = new Vector3(bomb.transform.position.x, 0, bomb.transform.position.z);
+                    }
+                }
+
             }
 
             totalCount++;

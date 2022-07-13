@@ -12,6 +12,11 @@ public class ItemManager : MonoBehaviour
         {
             HealthManager.lifeSystem++;
         }
-        
+    }
+
+    public void PressBomb()
+    {
+        EatCloud.stopBlue = false;
+        EatCloud.blueCount = 0;
     }
 }
