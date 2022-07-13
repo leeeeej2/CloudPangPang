@@ -18,7 +18,7 @@ public class EatCloud : MonoBehaviour
     public static bool stopPink = false;
     public int PinkNum = 1;
     public static bool stopBlue = false;
-
+    public bool check = false;
     Color currentCol;
 
     GameObject original;
@@ -47,7 +47,7 @@ public class EatCloud : MonoBehaviour
             cloud = original.transform.GetChild(3).gameObject;
             cloud.GetComponent<Text>().text = blueCount.ToString();
             bomb.transform.position = new Vector3(bomb.transform.position.x, -236, bomb.transform.position.z);
-            Debug.Log("BlueBomB");
+            
         }
     }
 

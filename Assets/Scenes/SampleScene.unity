@@ -361,7 +361,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 291747629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6847990759868040718, guid: fdf01ca43339dd547b8559558bada034, type: 3}
+        m_TargetAssemblyTypeName: ItemManager, Assembly-CSharp
+        m_MethodName: PressBomb
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &291747629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +527,7 @@ MonoBehaviour:
   zMax: 25
   zMin: 30
   timer: 0
-  timeDiff: 1
+  timeDiff: 1.8
   destoryTime: 30
   destoryOffset: 5
   myColors:

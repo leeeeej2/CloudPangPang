@@ -31,7 +31,7 @@ public class makeCloud : MonoBehaviour
     float yCloudRangeMin;
 
     float destroyLocation;
-    GameObject newCloud;
+    public static GameObject newCloud;
 
     Vector3 changePosition;
 
@@ -114,6 +114,9 @@ public class makeCloud : MonoBehaviour
 
             pickColor = myColors[Random.Range(0, myColors.Length)];
             newCloud.GetComponent<MeshRenderer>().material.color = pickColor;
+
+            newCloud.gameObject.tag = "cloudsClone";
+            //Debug.Log("" + newCloud.gameObject.tag);
 
             Vector3 mainPosition = mainObject.transform.position;
             Vector3 newPosition = new Vector3(Random.Range(xCloudRangeMin, xCloudRangeMax), Random.Range(yCloudRangeMin, yCloudRangeMax), Random.Range(zMin, zMax));
