@@ -6,7 +6,7 @@ public class makeCloud : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cloud;
-    public GameObject cloud2;
+    //public GameObject cloud2;
     public GameObject mainObject;
     public GameObject mainObject2;
 
@@ -32,6 +32,8 @@ public class makeCloud : MonoBehaviour
 
     float destroyLocation;
     GameObject newCloud;
+
+    Vector3 changePosition;
 
     public static Color white;
     public static Color yellow;
@@ -91,31 +93,104 @@ public class makeCloud : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        int whatType = 0;
+        //int whatType = 0;
 
         if(timer > timeDiff)
         {
             //x -10 ~ 10
             //y -15 ~ 15
         
-            whatType = Random.Range(0, 2);
+            //whatType = Random.Range(0, 2);
 
-            if(whatType == 0)
-            {
+            //if(whatType == 0)
+            //{
                 newCloud = Instantiate(cloud);
-            }
+            //}
             
-            if(whatType == 1)
-            {
-                newCloud = Instantiate(cloud2);
-            }
+            //if(whatType == 1)
+            //{
+            //    newCloud = Instantiate(cloud2);
+            //}
 
             pickColor = myColors[Random.Range(0, myColors.Length)];
             newCloud.GetComponent<MeshRenderer>().material.color = pickColor;
 
             Vector3 mainPosition = mainObject.transform.position;
-            newCloud.transform.position = new Vector3(Random.Range(xCloudRangeMin , xCloudRangeMax), Random.Range(yCloudRangeMin, yCloudRangeMax), Random.Range(zMin, zMax));
-            //newCloud.transform.position = new Vector3(-30f, 16.3f, 6.5f);
+            Vector3 newPosition = new Vector3(Random.Range(xCloudRangeMin, xCloudRangeMax), Random.Range(yCloudRangeMin, yCloudRangeMax), Random.Range(zMin, zMax));
+
+            //newCloud.gameObject.SetActive(false);
+
+            newCloud.transform.position = newPosition;
+            newCloud.transform.rotation = new Quaternion(0, 180, 0, 0);
+
+            BoxCollider hihi = newCloud.GetComponent<BoxCollider>();
+
+            float xOffsetCloud = newPosition.x - hihi.center.x;
+            float yOffsetCloud = newPosition.y - hihi.center.y;
+            float zOffsetCloud = newPosition.z - hihi.center.z;
+
+            Debug.Log("new cloud position : " + newCloud.transform.position);
+            Debug.Log("first collider center : " + hihi.center);
+            Debug.Log("x offset : " + xOffsetCloud + "y offset : " + yOffsetCloud);
+
+            //usually x is big and y is small
+
+
+            if (xOffsetCloud < 0)
+            {
+                //changePosition.x = hihi.center.x + xOffsetCloud; ///
+                changePosition.x = newPosition.x - (xOffsetCloud / 4); ///
+                Debug.Log("x change + : " + changePosition.x);
+            }
+            else
+            {
+                //changePosition.x = hihi.center.x - xOffsetCloud; 
+                changePosition.x = newPosition.x + (xOffsetCloud / 4); 
+                Debug.Log("x change - : " + changePosition.x);
+            }
+
+            if (yOffsetCloud < 0)
+            {
+                //changePosition.y = hihi.center.y + yOffsetCloud;/////
+                changePosition.y = newPosition.y - (yOffsetCloud / 3);/////
+                Debug.Log("y change + : " + changePosition.y);
+            }
+            else
+            {
+                //changePosition.y = hihi.center.y + yOffsetCloud;
+                changePosition.y = newPosition.y + (yOffsetCloud / 3);
+                Debug.Log("y change - : " + changePosition.y);
+            }
+
+            if (zOffsetCloud < 0)
+            {
+                //changePosition.y = hihi.center.y + yOffsetCloud;/////
+                changePosition.z = newPosition.z - (zOffsetCloud / 2);/////
+                Debug.Log("z change + : " + changePosition.z);
+            }
+            else
+            {
+                //changePosition.y = hihi.center.y + yOffsetCloud;
+                changePosition.z = newPosition.z + (zOffsetCloud / 2);
+                Debug.Log("z change - : " + changePosition.z);
+            }
+
+            newCloud.transform.position = changePosition;
+
+            BoxCollider hihi2 = newCloud.GetComponent<BoxCollider>();
+
+            Debug.Log("collider center : " + hihi2.center);
+
+            //newCloud.gameObject.SetActive(true);
+
+            Debug.Log("change Position : " + changePosition);
+
+            Debug.Log("current Position : " + newCloud.transform.position);
+
+            //Debug.Log("change Position : " + changePosition);
+
+            //newCloud.transform.position = new Vector3(-60.4f, 81f, -88.1f);
+
             float cloudSize = Random.Range(0.2f, 0.5f);
             newCloud.transform.localScale = new Vector3(cloudSize, cloudSize, cloudSize);
 

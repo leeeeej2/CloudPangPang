@@ -23,7 +23,7 @@ public class AIBullet : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
-        else if (other.gameObject.name == "cloud_1(Clone)" || other.gameObject.name == "cloud_2(Clone)")
+        else if (other.gameObject.name == "cloud_1(Clone)" || other.gameObject.name == "cloud_2(Clone)" || other.gameObject.name == "clouds(Clone)")
         {
             Destroy(gameObject);
         }

@@ -384,8 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6075eae9e618d7048b59c2787985a51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloud: {fileID: 3735328249620873890, guid: 110ce32efd25dde45bb11992fc3cc62e, type: 3}
-  cloud2: {fileID: 1325927641269819848, guid: a830baa9347b059469289d43871fbebc, type: 3}
+  cloud: {fileID: 710023472967072308, guid: 2834c6d474e1fda4d82f9accaf877b9f, type: 3}
   mainObject: {fileID: 1041454026}
   mainObject2: {fileID: 1454627434}
   xMax: -15
@@ -395,8 +394,8 @@ MonoBehaviour:
   zMax: 25
   zMin: 30
   timer: 0
-  timeDiff: 3
-  destoryTime: 20
+  timeDiff: 1
+  destoryTime: 30
   destoryOffset: 5
   myColors:
   - {r: 0, g: 0, b: 0, a: 0}

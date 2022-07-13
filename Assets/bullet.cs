@@ -13,7 +13,7 @@ public class bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
-        if (other.gameObject.name == "cloud_1(Clone)" || other.gameObject.name == "cloud_2(Clone)")
+        if (other.gameObject.name == "cloud_1(Clone)" || other.gameObject.name == "cloud_2(Clone)" || other.gameObject.name == "clouds(Clone)")
         {
             //Debug.Log("collision with cloud");
             Destroy(gameObject);
