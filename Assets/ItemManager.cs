@@ -8,7 +8,7 @@ public class ItemManager : MonoBehaviour
     {
         EatCloud.stopPink = false;
         EatCloud.pinkCount = 0;
-        if(HealthManager.lifeSystem < 2)
+        if(HealthManager.lifeSystem < 3)
         {
             HealthManager.lifeSystem++;
         }
