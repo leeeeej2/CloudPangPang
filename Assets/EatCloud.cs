@@ -15,15 +15,27 @@ public class EatCloud : MonoBehaviour
 
     public static int perCloud = 2;
 
+    public static bool stopPink = false;
+    
     Color currentCol;
 
     GameObject original;
     GameObject cloud;
     GameObject ammo;
-
+    GameObject heart;
+    
     private void Awake() {
         original = GameObject.Find("CloudCount");
         ammo = GameObject.Find("ammoCount");
+        heart = GameObject.Find("Giveheart");
+    }
+    private void Update() {
+        if(pinkCount == 0)
+        {
+            cloud = original.transform.GetChild(2).gameObject;
+            cloud.GetComponent<Text>().text = pinkCount.ToString();
+            heart.transform.position = new Vector3(heart.transform.position.x, -136, heart.transform.position.z);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -44,9 +56,18 @@ public class EatCloud : MonoBehaviour
             }
             else if(currentCol == makeCloud.pink)
             {
-                pinkCount++;
-                cloud = original.transform.GetChild(2).gameObject;
-                cloud.GetComponent<Text>().text = pinkCount.ToString();
+                if(!stopPink)
+                {
+                    pinkCount++;
+                    cloud = original.transform.GetChild(2).gameObject;
+                    cloud.GetComponent<Text>().text = pinkCount.ToString();
+                    if(pinkCount == 1)
+                    {
+                        stopPink = true;
+                        heart.transform.position = new Vector3(heart.transform.position.x, 0, heart.transform.position.z);
+                    }
+                }
+                
             }
             else if(currentCol == makeCloud.blue)
             {
