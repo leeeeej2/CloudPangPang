@@ -34,7 +34,7 @@ public class EatCloud : MonoBehaviour
         {
             cloud = original.transform.GetChild(2).gameObject;
             cloud.GetComponent<Text>().text = pinkCount.ToString();
-            heart.transform.position = new Vector3(heart.transform.position.x, -136, heart.transform.position.z);
+            heart.transform.position = new Vector3(heart.transform.position.x, -236, heart.transform.position.z);
         }
     }
     private void OnTriggerEnter(Collider other)
