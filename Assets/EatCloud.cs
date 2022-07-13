@@ -47,6 +47,7 @@ public class EatCloud : MonoBehaviour
             cloud = original.transform.GetChild(3).gameObject;
             cloud.GetComponent<Text>().text = blueCount.ToString();
             bomb.transform.position = new Vector3(bomb.transform.position.x, -236, bomb.transform.position.z);
+            Debug.Log("BlueBomB");
         }
     }
 
@@ -91,6 +92,7 @@ public class EatCloud : MonoBehaviour
                     cloud.GetComponent<Text>().text = blueCount.ToString();
                     if(blueCount == 1)
                     {
+                        stopBlue = true;
                         bomb.transform.position = new Vector3(bomb.transform.position.x, 0, bomb.transform.position.z);
                     }
                 }
