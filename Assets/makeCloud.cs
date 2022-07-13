@@ -139,39 +139,39 @@ public class makeCloud : MonoBehaviour
             if (xOffsetCloud < 0)
             {
                 //changePosition.x = hihi.center.x + xOffsetCloud; ///
-                changePosition.x = newPosition.x - (xOffsetCloud / 4); ///
+                changePosition.x = newPosition.x - (xOffsetCloud  / 8); ///
                 Debug.Log("x change + : " + changePosition.x);
             }
             else
             {
                 //changePosition.x = hihi.center.x - xOffsetCloud; 
-                changePosition.x = newPosition.x + (xOffsetCloud / 4); 
+                changePosition.x = newPosition.x + (xOffsetCloud / 8); 
                 Debug.Log("x change - : " + changePosition.x);
             }
 
             if (yOffsetCloud < 0)
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;/////
-                changePosition.y = newPosition.y - (yOffsetCloud / 3);/////
+                changePosition.y = newPosition.y - (yOffsetCloud / 5.5f);/////
                 Debug.Log("y change + : " + changePosition.y);
             }
             else
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;
-                changePosition.y = newPosition.y + (yOffsetCloud / 3);
+                changePosition.y = newPosition.y + (yOffsetCloud / 5.5f);
                 Debug.Log("y change - : " + changePosition.y);
             }
 
             if (zOffsetCloud < 0)
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;/////
-                changePosition.z = newPosition.z - (zOffsetCloud / 2);/////
+                changePosition.z = newPosition.z - (zOffsetCloud / 8);/////
                 Debug.Log("z change + : " + changePosition.z);
             }
             else
             {
                 //changePosition.y = hihi.center.y + yOffsetCloud;
-                changePosition.z = newPosition.z + (zOffsetCloud / 2);
+                changePosition.z = newPosition.z + (zOffsetCloud / 8);
                 Debug.Log("z change - : " + changePosition.z);
             }
 
@@ -191,7 +191,7 @@ public class makeCloud : MonoBehaviour
 
             //newCloud.transform.position = new Vector3(-60.4f, 81f, -88.1f);
 
-            float cloudSize = Random.Range(0.2f, 0.5f);
+            float cloudSize = Random.Range(0.2f, 0.2f);
             newCloud.transform.localScale = new Vector3(cloudSize, cloudSize, cloudSize);
 
             timer = 0;
