@@ -11,6 +11,8 @@ public class HealthManager : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    public static bool unlimitedMood = false;
+    int count = 0;
     // Start is called before the first frame update
 
 
@@ -27,7 +29,19 @@ public class HealthManager : MonoBehaviour
             hearts[i].sprite = fullHeart;
         }
 
-        if(lifeSystem == 0)
+        if (Input.GetKey(KeyCode.Space))
+        {
+                unlimitedMood = true;
+                Debug.Log("unlimited mood on");
+        }
+
+        if(Input.GetKey(KeyCode.O))
+        {
+            Debug.Log("unlimited mood off");
+            unlimitedMood = false;
+        }
+
+        if(lifeSystem < 1 && unlimitedMood == false)
         {
             MoveScene.GameOver();
             lifeSystem = 3;

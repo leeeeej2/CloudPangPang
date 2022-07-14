@@ -34,12 +34,15 @@ public class MakeEnemy : MonoBehaviour
     {
         if (isFirst)
         {
-            newEnemy = Instantiate(enemy);
+            if(Score.score > 4)
+            {
+                newEnemy = Instantiate(enemy);
 
-            //Vector3 mainPosition = mainObject.transform.position;
-            //newEnemy.transform.position = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
-            newEnemy.transform.position = new Vector3(-28.8f, 17.3f, 23.8f);
-            isFirst = false;
+                //Vector3 mainPosition = mainObject.transform.position;
+                //newEnemy.transform.position = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
+                newEnemy.transform.position = new Vector3(mainObject.transform.position.x, 17.3f, 23.8f);
+                isFirst = false;
+            }
         }
 
         if (isDie)
