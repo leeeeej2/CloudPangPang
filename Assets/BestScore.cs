@@ -9,19 +9,22 @@ public class BestScore : MonoBehaviour
     public string bestName;
 
     public static int[] rankingScore = new int[5];
-    public static string[] rankingName = new string[5];
+    public static string[] rankingDate = new string[5];
+
+    public static string currTime;
 
     // Start is called before the first frame update
     void Awake()
     {
         bestScore = PlayerPrefs.GetInt("BestScore", 0);
-        bestName = PlayerPrefs.GetString("BestName", "hagyeong");
+        bestName = PlayerPrefs.GetString("BestDate", System.DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss"));
     }
 
     void Start()
     {
         //bestScore = PlayerPrefs.GetInt("BestScore", 0);
         Debug.Log("best score is " + bestScore);
+        currTime = System.DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss");
     }
 
     // Update is called once per frame
@@ -37,45 +40,43 @@ public class BestScore : MonoBehaviour
             PlayerPrefs.SetInt("BestScore", bestScore);
             Debug.Log("update score");
         }
-
-        //GameObject.Find("bestbest").GetComponent<Text>().text = bestScore.ToString();
     }
 
-    public static void ScoreSet(int currScore, string currName)
+    public static void ScoreSet(int currScore)
     {
         PlayerPrefs.SetInt("CurrentScore", currScore);
-        PlayerPrefs.SetString("CurrentName", currName);
+        PlayerPrefs.SetString("CurrentName", System.DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss"));
 
         int tmpScore = 0;
-        string tmpName = "";
+        string tmpDate = "";
 
         for (int i = 0; i < 5; i++)
         {   
             rankingScore[i] = PlayerPrefs.GetInt(i + "BestScore");
-            rankingName[i] = PlayerPrefs.GetString(i + "BestName");
+            rankingDate[i] = PlayerPrefs.GetString(i + "BestDate");
 
             while (rankingScore[i] < currScore)
             {
                 tmpScore = rankingScore[i];
-                tmpName = rankingName[i];
+                tmpDate = rankingDate[i];
 
-                rankingName[i] = currName;
+                rankingDate[i] = currTime;
                 rankingScore[i] = currScore;
 
                 PlayerPrefs.SetInt(i + "BestScore", currScore);
-                PlayerPrefs.SetString(i.ToString() + "BestName", currName);
+                PlayerPrefs.SetString(i.ToString() + "BestDate", currTime);
 
                 currScore = tmpScore;
-                currName = tmpName;
+                currTime = tmpDate;
             }
         }
 
         for (int i = 0; i < 5; i++)
         {
             PlayerPrefs.SetInt(i + "BestScore", rankingScore[i]);
-            PlayerPrefs.SetString(i.ToString() + "BestName", currName);
+            PlayerPrefs.SetString(i.ToString() + "BestDate", rankingDate[i]);
 
-            //Debug.Log("best score : " + rankingScore[i] + "index is : " + i);
+            //Debug.Log(i + " score is : " + rankingScore[i] + "DATE is : " + rankingDate[i]);
         }
     }
 }

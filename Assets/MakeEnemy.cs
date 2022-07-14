@@ -8,39 +8,41 @@ public class MakeEnemy : MonoBehaviour
     public GameObject enemy;
     public GameObject mainObject;
 
-    public float xMax = 5f;
-    public float xMin = -5f;
-
-    public float yMax = 0;
-    public float yMin = 0;
-
-    public float zMax = -10f;
-    public float zMin = 10f;
-
     GameObject newEnemy;
+
     public static bool isDie = false;
     bool isFirst = true;
 
     public float timer = 0;
     public float timeDiff = 1.5f;
 
+    float xRange;
+    float yRange;
+
+    float xOffset;
+    float yOffset;
+
     void Start()
     {
+        xRange = 2 * Camera.main.orthographicSize;//2 * (Screen.height / 10) / 2;
+        yRange = xRange * Camera.main.aspect;
 
+        //xOffset = xRange + transform.localScale.x;
+        //yOffset = (yRange / 2) - (transform.localScale.y);
     }
 
     // Update is called once per frame
     void Update()
     {
+        Vector3 mainLocation = mainObject.transform.position;
+
         if (isFirst)
         {
             if(Score.score > 4)
             {
                 newEnemy = Instantiate(enemy);
 
-                //Vector3 mainPosition = mainObject.transform.position;
-                //newEnemy.transform.position = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
-                newEnemy.transform.position = new Vector3(mainObject.transform.position.x, 17.3f, 23.8f);
+                newEnemy.transform.position = new Vector3(mainLocation.x, mainLocation.y, mainLocation.z + 35f);
                 isFirst = false;
             }
         }
@@ -51,7 +53,6 @@ public class MakeEnemy : MonoBehaviour
 
             if(timer > timeDiff)
             {
-                Vector3 mainLocation = mainObject.transform.position;
 
                 Debug.Log("new enemy");
 
@@ -59,7 +60,7 @@ public class MakeEnemy : MonoBehaviour
 
                 //newEnemy.transform.position = new Vector3(-28.8f, 17.3f, 23.8f);
                 //Vector3 newLocation = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), Random.Range(zMin, zMax));
-                newEnemy.transform.position = new Vector3(mainLocation.x /*+ newLocation.x*/, 17.3f, 23.8f);
+                newEnemy.transform.position = new Vector3(mainLocation.x, mainLocation.y, mainLocation.z + 35f);
 
                 isDie = false;
                 timer = 0;

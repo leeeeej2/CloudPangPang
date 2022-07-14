@@ -23,7 +23,10 @@ public class MoveScene : MonoBehaviour
 
     public static void GameOver()
     {
-        BestScore.ScoreSet(Score.score, "hagyeong");
+        BestScore.bestScore = PlayerPrefs.GetInt("BestScore", 0);
+        //bestName = PlayerPrefs.GetString("BestName", "hagyeong");
+
+        BestScore.ScoreSet(Score.score);
         SceneManager.LoadScene("GameOver");
     }
 
