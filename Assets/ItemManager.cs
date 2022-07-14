@@ -28,4 +28,10 @@ public class ItemManager : MonoBehaviour
             DestroyImmediate(c, true);
         }
     }
+
+    public void PressSun()
+    {
+        EatCloud.stopYellow = false;
+        EatCloud.yellowCount = 0;
+    }
 }
