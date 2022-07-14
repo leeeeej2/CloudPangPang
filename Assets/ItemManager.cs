@@ -33,5 +33,7 @@ public class ItemManager : MonoBehaviour
     {
         EatCloud.stopYellow = false;
         EatCloud.yellowCount = 0;
+
+        MoveScene.GoFeverTime();
     }
 }

@@ -26,4 +26,9 @@ public class MoveScene : MonoBehaviour
         BestScore.ScoreSet(Score.score, "hagyeong");
         SceneManager.LoadScene("GameOver");
     }
+
+    public static void GoFeverTime()
+    {
+        SceneManager.LoadScene("FeverTime");
+    }
 }
