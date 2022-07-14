@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -11,12 +12,22 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //score = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameObject.Find("scores").GetComponent<Text>().text = score.ToString();
+        if(SceneManager.GetActiveScene().name == "GameOver")
+        {
+            GameObject.Find("bestbest").GetComponent<Text>().text = BestScore.bestScore.ToString();
+            GameObject.Find("curcur").GetComponent<Text>().text = score.ToString();
+            GameObject.Find("firstScore").GetComponent<Text>().text = BestScore.rankingScore[0].ToString();
+            GameObject.Find("secondScore").GetComponent<Text>().text = BestScore.rankingScore[1].ToString();
+        }
+        else
+        {
+            GameObject.Find("scores").GetComponent<Text>().text = score.ToString();
+        }
     }
 }

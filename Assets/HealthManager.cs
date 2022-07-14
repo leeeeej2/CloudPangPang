@@ -26,5 +26,11 @@ public class HealthManager : MonoBehaviour
         {
             hearts[i].sprite = fullHeart;
         }
+
+        if(lifeSystem == 1)
+        {
+            MoveScene.GameOver();
+            lifeSystem = 3;
+        }
     }
 }

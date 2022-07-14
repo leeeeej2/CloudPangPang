@@ -8,6 +8,7 @@ public class MoveScene : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
+        Score.score = 0;
     }
 
     public void QuitGame()
@@ -18,5 +19,11 @@ public class MoveScene : MonoBehaviour
         #else
                 Application.Quit(); 
         #endif
+    }
+
+    public static void GameOver()
+    {
+        BestScore.ScoreSet(Score.score, "hagyeong");
+        SceneManager.LoadScene("GameOver");
     }
 }
