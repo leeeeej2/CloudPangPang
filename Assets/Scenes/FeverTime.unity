@@ -7890,6 +7890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sun_Cartoon_Hipoly (145)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_TagString
+      value: lastSun
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
 --- !u!1 &655096424

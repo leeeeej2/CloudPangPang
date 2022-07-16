@@ -34,4 +34,9 @@ public class MoveScene : MonoBehaviour
     {
         SceneManager.LoadScene("FeverTime");
     }
+
+    public static void GoBack()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 }

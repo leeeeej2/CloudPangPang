@@ -12,8 +12,12 @@ public class MoveSun : MonoBehaviour
     bool once = true;
     public float destoryTime = 30.0f;
 
+    GameObject thsLastSun;
+    public float sunDistance = 2f;
+
     void Start()
     {
+        thsLastSun = GameObject.FindWithTag("lastSun");
     }
 
     // Update is called once per frame
@@ -39,6 +43,12 @@ public class MoveSun : MonoBehaviour
         if(gameObject.transform.position.z < (mainObject.transform.position.z - 2.5 * mainWidth))
         {
             Destroy(gameObject);
+        }
+
+        if (thsLastSun.transform.position.z < (mainObject.transform.position.z - sunDistance * mainWidth))
+        {
+            Debug.Log("we have to go back");
+            MoveScene.GoBack();
         }
     }
 }
