@@ -23,8 +23,14 @@ public class Score : MonoBehaviour
         {
             GameObject.Find("bestbest").GetComponent<Text>().text = BestScore.bestScore.ToString();
             GameObject.Find("curcur").GetComponent<Text>().text = score.ToString();
-            GameObject.Find("firstScore").GetComponent<Text>().text = BestScore.rankingScore[0].ToString();
-            GameObject.Find("secondScore").GetComponent<Text>().text = BestScore.rankingScore[1].ToString();
+            GameObject.Find("firstScore").GetComponent<Text>().text = BestScore.rankingScore[1].ToString();
+            GameObject.Find("secondScore").GetComponent<Text>().text = BestScore.rankingScore[2].ToString();
+
+            if (Input.GetKey(KeyCode.Y))
+            {
+                PlayerPrefs.DeleteAll();
+                Debug.Log("remove all playerfrab data");
+            }
         }
         else if(SceneManager.GetActiveScene().name == "FeverTime") 
         {

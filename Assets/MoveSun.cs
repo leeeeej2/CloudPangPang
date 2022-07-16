@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MoveSun : MonoBehaviour
 {
+    public GameObject mainObject;
+
     // Start is called before the first frame update
     public float speed;
     float randomSpeed;
@@ -12,7 +14,6 @@ public class MoveSun : MonoBehaviour
 
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -25,6 +26,19 @@ public class MoveSun : MonoBehaviour
             once = false;
         }
         transform.position -= Vector3.forward * Time.deltaTime * speed;
-        Destroy(gameObject, destoryTime);
+
+        //if(Main.ctransform.position.)
+
+        //float mainCenter = GetComponent.<RectTransform>().rect.width;
+        float mainWidth = mainObject.GetComponent<BoxCollider>().size.z;
+
+        //Debug.Log("main location is " + mainCenter.z);
+        //sDebug.Log("sun location is  " + sunCenter.z);
+
+        //if (mainCenter.z > sunCenter.z)
+        if(gameObject.transform.position.z < (mainObject.transform.position.z - 2.5 * mainWidth))
+        {
+            Destroy(gameObject);
+        }
     }
 }
