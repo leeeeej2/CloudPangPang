@@ -8,7 +8,7 @@ public class MoveSun : MonoBehaviour
     public float speed;
     float randomSpeed;
     bool once = true;
-    public float destoryTime = 10.0f;
+    public float destoryTime = 30.0f;
 
     void Start()
     {
