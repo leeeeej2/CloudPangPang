@@ -100,6 +100,7 @@ public class EatCloud : MonoBehaviour
             currentCol = GetComponent<MeshRenderer>().material.color;
             if(currentCol == makeCloud.white)
             {
+                //Debug.Log("cocoo");
                 whiteCount++;
                 cloud = original.transform.GetChild(0).gameObject;
                 cloud.GetComponent<Text>().text = whiteCount.ToString();
