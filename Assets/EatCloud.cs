@@ -11,7 +11,8 @@ public class EatCloud : MonoBehaviour
     public static int blueCount = 0;
 
     public static int totalCount = 0;
-    public static int ammoCount = 0;
+    public static int ammoCount = 3;
+    public int WhiteNum = 1;
 
     public static int perCloud = 2;
 
@@ -21,7 +22,7 @@ public class EatCloud : MonoBehaviour
     public int BlueNum = 1;
     public static bool stopYellow = false;
     public int YellowNum = 1;
-
+    
     Color currentCol;
 
     GameObject original;
@@ -30,16 +31,38 @@ public class EatCloud : MonoBehaviour
     GameObject heart;
     GameObject bomb;
     GameObject sun;
-    
+    GameObject ammoText;
+    GameObject ammoImage;
+
+    private float time = 0f;
+    private bool countTime = false;
+
     private void Awake() {
         original = GameObject.Find("CloudCount");
         ammo = GameObject.Find("ammoCount");
         heart = GameObject.Find("Giveheart");
         bomb = GameObject.Find("Bomb");
         sun = GameObject.Find("Sun");
+        ammoText = GameObject.Find("ammoUpdate").transform.GetChild(0).gameObject;
+        ammoImage = GameObject.Find("ammoUpdate").transform.GetChild(1).gameObject;
     }
-
+    private void Start() {
+        //ammoupdated.SetActive(false);
+    }
     private void Update() {
+        //if(countTime)
+        {
+            //time += Time.deltaTime;
+           // Debug.Log("CountTime: " + time);
+        }
+
+        //if(time > 2f)
+        {
+            //Debug.Log("timeOver");
+            //countTime = false;
+            //time = 0f;
+        }
+
         if(pinkCount == 0)
         {
             cloud = original.transform.GetChild(2).gameObject;
@@ -59,6 +82,15 @@ public class EatCloud : MonoBehaviour
             cloud.GetComponent<Text>().text = yellowCount.ToString();
             sun.transform.position = new Vector3(sun.transform.position.x, -236, sun.transform.position.z);
         }
+        if(whiteCount == 0 /*&& !countTime*/)
+        {
+            //if(!countTime)
+            {
+                ammoText.transform.position = new Vector3(ammoText.transform.position.x, -236, ammoText.transform.position.z);
+                ammoImage.transform.position = new Vector3(ammoImage.transform.position.x, -236, ammoImage.transform.position.z);
+            }
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -71,6 +103,18 @@ public class EatCloud : MonoBehaviour
                 whiteCount++;
                 cloud = original.transform.GetChild(0).gameObject;
                 cloud.GetComponent<Text>().text = whiteCount.ToString();
+                if(whiteCount == WhiteNum)
+                {
+                    Debug.Log("11111111111");
+                    countTime = true;
+                    ammoText.transform.position = new Vector3(ammoText.transform.position.x, 0, ammoText.transform.position.z);
+                    ammoImage.transform.position = new Vector3(ammoImage.transform.position.x, 0, ammoImage.transform.position.z);
+
+                    whiteCount = 0;
+                    cloud.GetComponent<Text>().text = whiteCount.ToString();
+                    ammoCount += 3;
+                    ammo.GetComponent<Text>().text = ammoCount.ToString();
+                }
             }
             else if(currentCol == makeCloud.yellow)
             {
@@ -118,12 +162,13 @@ public class EatCloud : MonoBehaviour
 
             }
 
-            totalCount++;
-            if(totalCount%perCloud == 0)
+            //totalCount++;
+            //if(totalCount%perCloud == 0)
             {
-                ammoCount = (totalCount/perCloud);
-                ammo.GetComponent<Text>().text = ammoCount.ToString();
+                //ammoCount = (totalCount/perCloud);
+                //ammo.GetComponent<Text>().text = ammoCount.ToString();
             }
+            
             //Debug.Log("collision");
             this.gameObject.SetActive(false);
             Score.score++;
