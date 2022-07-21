@@ -33,6 +33,8 @@ public class EatCloud : MonoBehaviour
     GameObject sun;
     GameObject ammoText;
     GameObject ammoImage;
+    GameObject TextTrans;
+    GameObject ImageTrans;
 
     private float time = 0f;
     static bool countTime = false;
@@ -43,26 +45,28 @@ public class EatCloud : MonoBehaviour
         heart = GameObject.Find("Giveheart");
         bomb = GameObject.Find("Bomb");
         sun = GameObject.Find("Sun");
-        ammoText = GameObject.Find("ammoUpdate").transform.GetChild(0).gameObject;
-        ammoImage = GameObject.Find("ammoUpdate").transform.GetChild(1).gameObject;
+        ammoText = GameObject.Find("Plus");
+        ammoImage = GameObject.Find("AmmoUpdate");
+        TextTrans = GameObject.Find("PlusTransform");
+        ImageTrans = GameObject.Find("AmmoTransform");
     }
     private void Start() {
         //ammoupdated.SetActive(false);
     }
     private void Update() {
 
-        Debug.Log("count " + countTime);
+       // Debug.Log("count " + countTime);
         if(countTime)
         {
            time += Time.deltaTime;
-           Debug.Log("CountTime: " + time);
+           //Debug.Log("CountTime: " + time);
         }
 
-        //if(time > 2f)
+        if(time > 1.2f)
         {
             //Debug.Log("timeOver");
-            //countTime = false;
-            //time = 0f;
+            countTime = false;
+            time = 0f;
         }
 
         if(pinkCount == 0)
@@ -84,12 +88,12 @@ public class EatCloud : MonoBehaviour
             cloud.GetComponent<Text>().text = yellowCount.ToString();
             sun.transform.position = new Vector3(sun.transform.position.x, -236, sun.transform.position.z);
         }
-        if(whiteCount == 0 /*&& !countTime*/)
+        if(whiteCount == 0 && !countTime)
         {
             //if(!countTime)
             {
-                ammoText.transform.position = new Vector3(ammoText.transform.position.x, -236, ammoText.transform.position.z);
-                ammoImage.transform.position = new Vector3(ammoImage.transform.position.x, -236, ammoImage.transform.position.z);
+                ammoText.transform.position = new Vector3(TextTrans.transform.position.x, -236, TextTrans.transform.position.z);
+                ammoImage.transform.position = new Vector3(ImageTrans.transform.position.x, -236 , ImageTrans.transform.position.z);
             }
         }
 
@@ -107,10 +111,10 @@ public class EatCloud : MonoBehaviour
                 cloud.GetComponent<Text>().text = whiteCount.ToString();
                 if(whiteCount == WhiteNum)
                 {
-                    Debug.Log("11111111111");
+                    //Debug.Log("11111111111");
                     countTime = true;
-                    ammoText.transform.position = new Vector3(ammoText.transform.position.x, 0, ammoText.transform.position.z);
-                    ammoImage.transform.position = new Vector3(ammoImage.transform.position.x, 0, ammoImage.transform.position.z);
+                    ammoText.transform.position = new Vector3(TextTrans.transform.position.x, TextTrans.transform.position.y, TextTrans.transform.position.z);
+                    ammoImage.transform.position = new Vector3(ImageTrans.transform.position.x, ImageTrans.transform.position.y , ImageTrans.transform.position.z);
 
                     whiteCount = 0;
                     cloud.GetComponent<Text>().text = whiteCount.ToString();
