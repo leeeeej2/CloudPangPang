@@ -35,7 +35,7 @@ public class EatCloud : MonoBehaviour
     GameObject ammoImage;
 
     private float time = 0f;
-    private bool countTime = false;
+    static bool countTime = false;
 
     private void Awake() {
         original = GameObject.Find("CloudCount");
@@ -50,10 +50,12 @@ public class EatCloud : MonoBehaviour
         //ammoupdated.SetActive(false);
     }
     private void Update() {
-        //if(countTime)
+
+        Debug.Log("count " + countTime);
+        if(countTime)
         {
-            //time += Time.deltaTime;
-           // Debug.Log("CountTime: " + time);
+           time += Time.deltaTime;
+           Debug.Log("CountTime: " + time);
         }
 
         //if(time > 2f)
@@ -100,7 +102,6 @@ public class EatCloud : MonoBehaviour
             currentCol = GetComponent<MeshRenderer>().material.color;
             if(currentCol == makeCloud.white)
             {
-                //Debug.Log("cocoo");
                 whiteCount++;
                 cloud = original.transform.GetChild(0).gameObject;
                 cloud.GetComponent<Text>().text = whiteCount.ToString();
