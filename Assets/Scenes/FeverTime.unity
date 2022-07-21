@@ -160,6 +160,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &149905
 Animator:
   serializedVersion: 4
@@ -218,6 +219,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &422958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,6 +359,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &9419704
 Animator:
   serializedVersion: 4
@@ -529,6 +532,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &32137830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +603,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &36043553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,6 +674,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &43004181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,6 +814,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &56143771
 Animator:
   serializedVersion: 4
@@ -866,6 +873,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &59207835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,6 +1115,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &73136919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1177,6 +1186,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &73413188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,6 +1314,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &132973066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1386,6 +1397,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &147849334
 Animator:
   serializedVersion: 4
@@ -1501,6 +1513,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &149525697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1583,6 +1596,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &161605697
 Animator:
   serializedVersion: 4
@@ -1936,6 +1950,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &183356747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2018,6 +2033,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &188895942
 Animator:
   serializedVersion: 4
@@ -2171,6 +2187,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &198332997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2310,6 +2327,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &208512834
 Animator:
   serializedVersion: 4
@@ -2380,6 +2398,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &212547525
 Animator:
   serializedVersion: 4
@@ -2495,6 +2514,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &245210313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,6 +2654,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &248846817
 Animator:
   serializedVersion: 4
@@ -2898,6 +2919,7 @@ Transform:
   - {fileID: 1553111753}
   - {fileID: 597592091}
   - {fileID: 481194176}
+  - {fileID: 629470080}
   m_Father: {fileID: 1449134215}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2926,6 +2948,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &263983107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3008,6 +3031,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &268504707
 Animator:
   serializedVersion: 4
@@ -3123,6 +3147,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &272427208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3205,6 +3230,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &273661515
 Animator:
   serializedVersion: 4
@@ -3377,6 +3403,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &286272066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3516,6 +3543,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &297553130
 Animator:
   serializedVersion: 4
@@ -3586,6 +3614,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &317705117
 Animator:
   serializedVersion: 4
@@ -3701,6 +3730,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &318544452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3783,6 +3813,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &322873924
 Animator:
   serializedVersion: 4
@@ -3955,6 +3986,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &341361904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4025,6 +4057,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &342286589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4152,6 +4185,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &364166621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4222,6 +4256,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &384065242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4304,6 +4339,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &384719116
 Animator:
   serializedVersion: 4
@@ -4374,6 +4410,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &388370729
 Animator:
   serializedVersion: 4
@@ -4489,6 +4526,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &388765723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4776,6 +4814,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &418692652
 Animator:
   serializedVersion: 4
@@ -4903,6 +4942,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &425904182
 Animator:
   serializedVersion: 4
@@ -5087,6 +5127,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &438581420
 Animator:
   serializedVersion: 4
@@ -5214,6 +5255,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &455981458
 Animator:
   serializedVersion: 4
@@ -5443,6 +5485,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &468732142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5570,6 +5613,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &476898023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5652,6 +5696,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &481194179
 Animator:
   serializedVersion: 4
@@ -5722,6 +5767,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &482482657
 Animator:
   serializedVersion: 4
@@ -5849,6 +5895,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &490023307
 Animator:
   serializedVersion: 4
@@ -5919,6 +5966,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &492226054
 Animator:
   serializedVersion: 4
@@ -6046,6 +6094,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &497547198
 Animator:
   serializedVersion: 4
@@ -6104,6 +6153,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &498891745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6174,6 +6224,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &504776831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6313,6 +6364,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &507665070
 Animator:
   serializedVersion: 4
@@ -6383,6 +6435,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &508801724
 Animator:
   serializedVersion: 4
@@ -6453,6 +6506,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &509877418
 Animator:
   serializedVersion: 4
@@ -6694,6 +6748,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &529718505
 Animator:
   serializedVersion: 4
@@ -6821,6 +6876,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &551939754
 Animator:
   serializedVersion: 4
@@ -6936,6 +6992,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &559272144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7147,6 +7204,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &568726357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7217,6 +7275,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &591738397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7413,6 +7472,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &597592094
 Animator:
   serializedVersion: 4
@@ -7540,6 +7600,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &626983507
 Animator:
   serializedVersion: 4
@@ -7567,6 +7628,77 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626983503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1650116, y: 2.9586391, z: 1.1562592}
+  m_Center: {x: -0.0090408325, y: 0.019586563, z: -0.07812959}
+--- !u!1 &629470079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+  m_PrefabInstance: {fileID: 1885327273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &629470080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+  m_PrefabInstance: {fileID: 1885327273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &629470081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629470079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0814a74061f17694dbac1ab9ccaef5ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainObject: {fileID: 737433532}
+  speed: 0
+  destoryTime: 10
+  sunDistance: 2.45
+--- !u!114 &629470082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629470079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ec15697f9fd5f48993e79b7a64e1d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &629470083
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629470079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41e323c116cc6134e91d77626b125786, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &629470084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629470079}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -7892,7 +8024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
       propertyPath: m_TagString
-      value: lastSun
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
@@ -7967,6 +8099,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &655239360
 Animator:
   serializedVersion: 4
@@ -8389,6 +8522,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &685361601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8528,6 +8662,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &708117559
 Animator:
   serializedVersion: 4
@@ -8643,6 +8778,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &720577729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8725,6 +8861,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &723561967
 Animator:
   serializedVersion: 4
@@ -9029,6 +9166,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &743589835
 Animator:
   serializedVersion: 4
@@ -9144,6 +9282,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &747045998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9397,6 +9536,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &765472053
 Animator:
   serializedVersion: 4
@@ -9524,6 +9664,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &777461485
 Animator:
   serializedVersion: 4
@@ -9594,6 +9735,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &786015538
 Animator:
   serializedVersion: 4
@@ -9664,6 +9806,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &789427294
 Animator:
   serializedVersion: 4
@@ -9734,6 +9877,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &793884808
 Animator:
   serializedVersion: 4
@@ -9792,6 +9936,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &798485107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10159,6 +10304,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &843064762
 Animator:
   serializedVersion: 4
@@ -10274,6 +10420,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &850325007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10470,6 +10617,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &864216095
 Animator:
   serializedVersion: 4
@@ -10540,6 +10688,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &875499345
 Animator:
   serializedVersion: 4
@@ -10667,6 +10816,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &887079168
 Animator:
   serializedVersion: 4
@@ -10737,6 +10887,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &892065398
 Animator:
   serializedVersion: 4
@@ -10864,6 +11015,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &909568773
 Animator:
   serializedVersion: 4
@@ -11264,6 +11416,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &932362271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11346,6 +11499,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &949554750
 Animator:
   serializedVersion: 4
@@ -11404,6 +11558,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &953574503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11474,6 +11629,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &959354726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11601,6 +11757,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &963116536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11785,6 +11942,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &968969431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11867,6 +12025,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &983591933
 Animator:
   serializedVersion: 4
@@ -11937,6 +12096,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1000019239
 Animator:
   serializedVersion: 4
@@ -12099,6 +12259,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1009467696
 Animator:
   serializedVersion: 4
@@ -12385,6 +12546,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1037983430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12512,6 +12674,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1051656446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12639,6 +12802,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1058622040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12709,6 +12873,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1063832237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12836,6 +13001,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1067810592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13020,6 +13186,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1079946127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13090,6 +13257,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1081737402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13248,6 +13416,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1084570086
 Animator:
   serializedVersion: 4
@@ -13318,6 +13487,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1093676154
 Animator:
   serializedVersion: 4
@@ -13433,6 +13603,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1134026276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13617,6 +13788,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1146417095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13744,6 +13916,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1157040608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13814,6 +13987,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1177655299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14055,6 +14229,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1185909008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14296,6 +14471,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1220963421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14378,6 +14554,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1221387414
 Animator:
   serializedVersion: 4
@@ -14493,6 +14670,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1245310340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14563,6 +14741,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1255176659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14645,6 +14824,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1260053053
 Animator:
   serializedVersion: 4
@@ -14738,6 +14918,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1266893979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14820,6 +15001,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1269060145
 Animator:
   serializedVersion: 4
@@ -14878,6 +15060,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1273974438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15131,6 +15314,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1289894446
 Animator:
   serializedVersion: 4
@@ -15283,6 +15467,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1313010255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15467,6 +15652,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1328318449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15606,6 +15792,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1341030371
 Animator:
   serializedVersion: 4
@@ -15676,6 +15863,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1346202922
 Animator:
   serializedVersion: 4
@@ -15746,6 +15934,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1347292636
 Animator:
   serializedVersion: 4
@@ -15804,6 +15993,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1349808868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15931,6 +16121,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1378643345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16070,6 +16261,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1392752754
 Animator:
   serializedVersion: 4
@@ -16185,6 +16377,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1413240993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16255,6 +16448,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1413828216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16325,6 +16519,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1427290477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16407,6 +16602,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1436645680
 Animator:
   serializedVersion: 4
@@ -16591,6 +16787,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1448122515
 Animator:
   serializedVersion: 4
@@ -16684,6 +16881,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1449700847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16754,6 +16952,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1467671378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16836,6 +17035,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1469357677
 Animator:
   serializedVersion: 4
@@ -16906,6 +17106,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1472503909
 Animator:
   serializedVersion: 4
@@ -17135,6 +17336,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1493780699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17650,6 +17852,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1518816977
 Animator:
   serializedVersion: 4
@@ -17720,6 +17923,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1519538349
 Animator:
   serializedVersion: 4
@@ -17790,6 +17994,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1521451275
 Animator:
   serializedVersion: 4
@@ -18068,6 +18273,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1535755472
 Animator:
   serializedVersion: 4
@@ -18309,6 +18515,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1551115594
 Animator:
   serializedVersion: 4
@@ -18379,6 +18586,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1553111756
 Animator:
   serializedVersion: 4
@@ -18494,6 +18702,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1586592403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18576,6 +18785,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1590641080
 Animator:
   serializedVersion: 4
@@ -18760,6 +18970,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1595247908
 Animator:
   serializedVersion: 4
@@ -18887,6 +19098,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1604279833
 Animator:
   serializedVersion: 4
@@ -18957,6 +19169,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1606834215
 Animator:
   serializedVersion: 4
@@ -19015,6 +19228,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1613669306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19097,6 +19311,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1614761493
 Animator:
   serializedVersion: 4
@@ -19212,6 +19427,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1623754752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19282,6 +19498,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1628251297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19364,6 +19581,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1632156673
 Animator:
   serializedVersion: 4
@@ -19593,6 +19811,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1641200476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19675,6 +19894,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1643350911
 Animator:
   serializedVersion: 4
@@ -19745,6 +19965,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1652721890
 Animator:
   serializedVersion: 4
@@ -19872,6 +20093,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1656702534
 Animator:
   serializedVersion: 4
@@ -20254,6 +20476,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1675968742
 Animator:
   serializedVersion: 4
@@ -20324,6 +20547,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1686616869
 Animator:
   serializedVersion: 4
@@ -20382,6 +20606,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1699728073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20452,6 +20677,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1702514731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20648,6 +20874,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1715905631
 Animator:
   serializedVersion: 4
@@ -20889,6 +21116,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1736083642
 Animator:
   serializedVersion: 4
@@ -21004,6 +21232,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1753949047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21327,6 +21556,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1761753663
 Animator:
   serializedVersion: 4
@@ -21612,6 +21842,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1796371685
 Animator:
   serializedVersion: 4
@@ -21727,6 +21958,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1809970831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21797,6 +22029,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1812655714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22038,6 +22271,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1834658719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22165,6 +22399,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1844528237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22475,6 +22710,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1861655913
 Animator:
   serializedVersion: 4
@@ -22659,6 +22895,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1877669365
 Animator:
   serializedVersion: 4
@@ -22692,6 +22929,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.1650116, y: 2.9586391, z: 1.1562592}
   m_Center: {x: -0.0090408325, y: 0.019586563, z: -0.07812959}
+--- !u!1001 &1885327273
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 261731970}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_RootOrder
+      value: 169
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.8999996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 66.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 200.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_Name
+      value: sunToCheckLast
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
+      propertyPath: m_TagString
+      value: lastSun
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
 --- !u!1 &1888216233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6900112837334e74fa8d2675e9c5981f, type: 3}
@@ -22717,6 +23015,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1888216236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22799,6 +23098,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1889586018
 Animator:
   serializedVersion: 4
@@ -22869,6 +23169,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1898476394
 Animator:
   serializedVersion: 4
@@ -23053,6 +23354,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1944173173
 Animator:
   serializedVersion: 4
@@ -23123,6 +23425,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1946248413
 Animator:
   serializedVersion: 4
@@ -23329,6 +23632,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1956094740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23513,6 +23817,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1959912663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23640,6 +23945,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1963186653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24007,6 +24313,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &1971603044
 Animator:
   serializedVersion: 4
@@ -24122,6 +24429,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &1980697844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24306,6 +24614,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &2000010398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24388,6 +24697,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2006525566
 Animator:
   serializedVersion: 4
@@ -24458,6 +24768,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2012714054
 Animator:
   serializedVersion: 4
@@ -24573,6 +24884,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &2025924809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24757,6 +25069,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &2047576196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24827,6 +25140,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &2047646080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25011,6 +25325,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &2058647610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25093,6 +25408,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2060053214
 Animator:
   serializedVersion: 4
@@ -25163,6 +25479,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2061110624
 Animator:
   serializedVersion: 4
@@ -25290,6 +25607,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2078797102
 Animator:
   serializedVersion: 4
@@ -25360,6 +25678,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2080591432
 Animator:
   serializedVersion: 4
@@ -25487,6 +25806,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2088170384
 Animator:
   serializedVersion: 4
@@ -25557,6 +25877,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2092330167
 Animator:
   serializedVersion: 4
@@ -25615,6 +25936,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &2095624642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25697,6 +26019,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2098100546
 Animator:
   serializedVersion: 4
@@ -25824,6 +26147,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2101250336
 Animator:
   serializedVersion: 4
@@ -25894,6 +26218,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2104273092
 Animator:
   serializedVersion: 4
@@ -26021,6 +26346,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2106434626
 Animator:
   serializedVersion: 4
@@ -26079,6 +26405,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &2107972875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26149,6 +26476,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!114 &2125009813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26231,6 +26559,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2126460798
 Animator:
   serializedVersion: 4
@@ -26358,6 +26687,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2141211749
 Animator:
   serializedVersion: 4
@@ -26542,6 +26872,7 @@ MonoBehaviour:
   mainObject: {fileID: 737433532}
   speed: 0
   destoryTime: 10
+  sunDistance: 2.45
 --- !u!95 &2145944372
 Animator:
   serializedVersion: 4

@@ -21,7 +21,7 @@ public class EatSun : MonoBehaviour
         if(other.gameObject.name == "aircraft-A-A")
         {
             this.gameObject.SetActive(false);
-            Debug.Log("Sun Collider");
+            //Debug.Log("Sun Collider");
             Score.feverScore++;
         }
     }
