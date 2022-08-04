@@ -8,7 +8,7 @@ public class Gun : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
-
+    public static bool shootCamera = false;
     GameObject ammo;
 
     private void Awake() {
@@ -19,6 +19,7 @@ public class Gun : MonoBehaviour
         //if (Input.GetMouseButtonDown(0))
         if(ManageFire.IsPressed && (EatCloud.ammoCount > 0))
         { 
+            shootCamera = true;
             //EatCloud.totalCount -= EatCloud.perCloud;
             //EatCloud.ammoCount = (EatCloud.totalCount/EatCloud.perCloud);
             EatCloud.ammoCount--;
@@ -27,6 +28,9 @@ public class Gun : MonoBehaviour
             Debug.Log("Pressed");
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
+        }
+        else{
+            shootCamera = false;
         }
     }
 }
