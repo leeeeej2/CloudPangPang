@@ -6,7 +6,7 @@ public class AIBullet : MonoBehaviour
 {
 
     public float AIlife = 3;
-
+    //public static bool cameraAttacked = false;
     //void Update()
     //{
     //    gameObject.GetComponent<BoxCollider>().enabled = true;
@@ -36,15 +36,18 @@ public class AIBullet : MonoBehaviour
             if(HealthManager.lifeSystem > 0)
             {
                 HealthManager.lifeSystem--;
+                //cameraAttacked = true;
             }
 
             //Debug.Log("collisionssssss");
             this.gameObject.SetActive(false);
             Destroy(gameObject);
+            //cameraAttacked = false;
         }
         else if (other.gameObject.name == "cloud_1(Clone)" || other.gameObject.name == "cloud_2(Clone)")
         {
             Destroy(gameObject);
         }
+
     }
 }
