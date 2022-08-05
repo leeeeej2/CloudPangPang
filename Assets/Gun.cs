@@ -23,7 +23,6 @@ public class Gun : MonoBehaviour
             //EatCloud.totalCount -= EatCloud.perCloud;
             //EatCloud.ammoCount = (EatCloud.totalCount/EatCloud.perCloud);
             EatCloud.ammoCount--;
-            ammo.GetComponent<Text>().text = EatCloud.ammoCount.ToString();
             ManageFire.IsPressed = false;
             Debug.Log("Pressed");
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
@@ -32,5 +31,7 @@ public class Gun : MonoBehaviour
         else{
             shootCamera = false;
         }
+
+        ammo.GetComponent<Text>().text = EatCloud.ammoCount.ToString();
     }
 }
