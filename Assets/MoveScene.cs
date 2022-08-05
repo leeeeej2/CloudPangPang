@@ -12,6 +12,7 @@ public class MoveScene : MonoBehaviour
         //reset all data to start new game
         Score.score = 0;
         Score.enemyDie = 2;
+        Score.feverScore = 0;
         EatCloud.whiteCount = 0;
         EatCloud.yellowCount = 0;
         EatCloud.pinkCount = 0;
