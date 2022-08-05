@@ -62,6 +62,8 @@ public class MoveSun : MonoBehaviour
                 Debug.Log("sun will be die");
                 isGone = true;
             }
+
+            Score.score += Score.feverScore;
         }
 
         if(isGone)
