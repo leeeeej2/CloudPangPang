@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MoveScene : MonoBehaviour
 {
+    public static bool addOnce = true;
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
@@ -56,10 +57,20 @@ public class MoveScene : MonoBehaviour
     public static void GoFeverTime()
     {
         SceneManager.LoadScene("FeverTime");
+        addOnce = true;
     }
 
     public static void GoBack()
     {
         SceneManager.LoadScene("SampleScene");
+
+        if(addOnce)
+        {
+            Debug.Log("Original score is" + Score.score);
+            Debug.Log("Sun score is" + Score.feverScore);
+            Score.score += Score.feverScore;
+            addOnce = false;
+        }
+
     }
 }

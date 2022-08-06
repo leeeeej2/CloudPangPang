@@ -19,7 +19,6 @@ public class MoveSun : MonoBehaviour
     float timer = 0;
 
     bool isGone = false;
-
     void Start()
     {
         isGone = false;
@@ -59,22 +58,20 @@ public class MoveSun : MonoBehaviour
 
             if ((lastLocation.z - mainWidth) < mainObject.transform.position.z)
             {
-                Debug.Log("sun will be die");
+                //Debug.Log("sun will be die");
                 isGone = true;
             }
-
-            Score.score += Score.feverScore;
         }
 
         if(isGone)
         {
             timer += Time.deltaTime;
 
-            Debug.Log(timer);
+            //Debug.Log(timer);
 
             if (timer > 2.0f)
             {
-                Debug.Log("we have to go back");
+                //Debug.Log("we have to go back");
                 MoveScene.GoBack();
                 timer = 0;
                 isGone = false;
