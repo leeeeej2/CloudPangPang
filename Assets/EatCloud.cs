@@ -12,16 +12,16 @@ public class EatCloud : MonoBehaviour
 
     public static int totalCount = 0;
     public static int ammoCount = 3;
-    public int WhiteNum = 1;
+    public int WhiteNum = 3;
 
     public static int perCloud = 2;
 
     public static bool stopPink = false;
-    public int PinkNum = 1;
+    public int PinkNum = 3;
     public static bool stopBlue = false;
-    public int BlueNum = 1;
+    public int BlueNum = 3;
     public static bool stopYellow = false;
-    public int YellowNum = 1;
+    public int YellowNum = 3;
     
     Color currentCol;
 
@@ -50,6 +50,7 @@ public class EatCloud : MonoBehaviour
         TextTrans = GameObject.Find("PlusTransform");
         ImageTrans = GameObject.Find("AmmoTransform");
     }
+
     private void Start() {
         //ammoupdated.SetActive(false);
 
@@ -83,6 +84,7 @@ public class EatCloud : MonoBehaviour
             bomb.transform.position = new Vector3(bomb.transform.position.x, 0, bomb.transform.position.z);
         }
     }
+
     private void Update() {
 
        // Debug.Log("count " + countTime);
@@ -143,8 +145,10 @@ public class EatCloud : MonoBehaviour
             if(currentCol == makeCloud.white)
             {
                 whiteCount++;
-                //cloud = original.transform.GetChild(0).gameObject;
-                //cloud.GetComponent<Text>().text = whiteCount.ToString();
+                Debug.Log("WHITE: " + whiteCount);
+                
+                cloud = original.transform.GetChild(0).gameObject;
+                cloud.GetComponent<Text>().text = whiteCount.ToString();
                 if(whiteCount == WhiteNum)
                 {
                     //Debug.Log("11111111111");
@@ -163,6 +167,8 @@ public class EatCloud : MonoBehaviour
                 if(!stopYellow)
                 {
                     yellowCount++;
+                    Debug.Log("YELLOW: " + yellowCount);
+
                     //cloud = original.transform.GetChild(1).gameObject;
                     //cloud.GetComponent<Text>().text = yellowCount.ToString();
                     if(yellowCount == YellowNum)
@@ -178,6 +184,8 @@ public class EatCloud : MonoBehaviour
                 if(!stopPink)
                 {
                     pinkCount++;
+                    Debug.Log("PINK: " + pinkCount);
+
                     //cloud = original.transform.GetChild(2).gameObject;
                     //cloud.GetComponent<Text>().text = pinkCount.ToString();
                     if(pinkCount == PinkNum)
@@ -193,6 +201,8 @@ public class EatCloud : MonoBehaviour
                 if(!stopBlue)
                 {
                     blueCount++;
+                    Debug.Log("BLUE: " + blueCount);
+
                     //cloud = original.transform.GetChild(3).gameObject;
                     //cloud.GetComponent<Text>().text = blueCount.ToString();
                     if(blueCount == BlueNum)
