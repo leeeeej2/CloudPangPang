@@ -58,6 +58,11 @@ public class MoveScene : MonoBehaviour
     {
         SceneManager.LoadScene("FeverTime");
         addOnce = true;
+
+        //Debug.Log("white cloud is" + EatCloud.whiteCount);
+        //Debug.Log("pink cloud is" + EatCloud.pinkCount);
+        //Debug.Log("yellow cloud is" + EatCloud.yellowCount);
+        //Debug.Log("blue cloud is" + EatCloud.blueCount);
     }
 
     public static void GoBack()
@@ -66,8 +71,14 @@ public class MoveScene : MonoBehaviour
 
         if(addOnce)
         {
-            Debug.Log("Original score is" + Score.score);
-            Debug.Log("Sun score is" + Score.feverScore);
+            //Debug.Log("Original score is" + Score.score);
+            //Debug.Log("Sun score is" + Score.feverScore);
+
+            //Debug.Log("white cloud is" + EatCloud.whiteCount);
+            //Debug.Log("pink cloud is" + EatCloud.pinkCount);
+            //Debug.Log("yellow cloud is" + EatCloud.yellowCount);
+            //Debug.Log("blue cloud is" + EatCloud.blueCount);
+
             Score.score += Score.feverScore;
             addOnce = false;
         }
