@@ -8,9 +8,10 @@ public class CameraShake : MonoBehaviour
     private float shakeIntensity;
     private int preLifeSystem;
 
+
     public void Update() {
         //if(Input.GetKeyDown("1"))
-        if(preLifeSystem - HealthManager.lifeSystem != 0)
+        if(preLifeSystem > HealthManager.lifeSystem)
         {
             OnShakeCameraAttacked(0.1f, 1f);
         }
@@ -76,6 +77,6 @@ public class CameraShake : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        preLifeSystem = HealthManager.lifeSystem;
     }
 }

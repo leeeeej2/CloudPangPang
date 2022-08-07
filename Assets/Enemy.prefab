@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7576783439750959169}
   - component: {fileID: 1760163426911950813}
   - component: {fileID: 5792904518748259248}
+  - component: {fileID: 8313715691481771890}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -149,3 +150,23 @@ MonoBehaviour:
   AIbullet: {fileID: 3047972384058124107, guid: ad6132bf175af3c4887b910122f2f458, type: 3}
   shootPoint: {fileID: 5792904519541699848}
   AIBulletSpeed: 70
+--- !u!95 &8313715691481771890
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8225499354895790484}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 493102c5816499444b8333ab3e87a13f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

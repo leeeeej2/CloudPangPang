@@ -24,7 +24,7 @@ public class bullet : MonoBehaviour
 
             if (Score.enemyDie == 0)
             {
-                //Debug.Log("collision with cloud");
+                Debug.Log("collision with Enemy");
 
                 Score.score += 3;
                 Score.enemyDie = 2;
@@ -33,6 +33,7 @@ public class bullet : MonoBehaviour
             }
             else
             {
+                Debug.Log("collision with Enemy");
                 Score.enemyDie--;
                 Debug.Log(Score.enemyDie);
             }

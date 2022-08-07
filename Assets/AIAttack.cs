@@ -14,19 +14,69 @@ public class AIAttack : MonoBehaviour
     public Transform shootPoint;
 
     public float AIBulletSpeed = 10;
+    private int preEnemyDie;
+    private Animator animator;
+    //bool playing = false;
+    //private float playTime = 0.8f;
 
     private void Awake() {
         player = GameObject.Find("aircraft-A-A").transform;
+        animator = GetComponent<Animator>();
+        animator.SetBool("IsAttacked", false);
+    }
 
+    private void Start() {
+        preEnemyDie = Score.enemyDie;
     }
 
     private void Update() {
-        AttackPlayer();
 
+        if(preEnemyDie > Score.enemyDie)
+        {
+            animator.SetBool("IsAttacked", true);
+           //playAnim.Play("EnemyAttacked");
+        }
+        else
+        {
+            animator.SetBool("IsAttacked", false);
+        }
+
+        if(!animator.GetBool("IsAttacked"))
+        {
+            AttackPlayer();
+        }
+
+        preEnemyDie = Score.enemyDie;
+    }
+/*
+    public void playingAnim()
+    {
+        playTime = 0.8f;
+        StopCoroutine("playAnimation");
+        StartCoroutine("playAnimation");
     }
 
+    private IEnumerator playAnimation()
+    {
+        while(playTime > 0.0f)
+        {
+            if(!playing)
+            {
+                playAnim.Play("EnemyAttacked");
+                playing = true;
+            }
+
+            playTime -= Time.deltaTime;
+            yield return null;
+        }
+        //playAnim.Play("EnemyStand");
+        playing = false;
+    }
+    */
     private void AttackPlayer()
     {
+        //playAnim.Play("EnemyStand");
+
         transform.LookAt(player);
         transform.Rotate(0, 40, 0);
 
