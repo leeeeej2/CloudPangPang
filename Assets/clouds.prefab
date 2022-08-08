@@ -112,6 +112,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a53b1bc1e393b4db669773932805ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WhiteNum: 3
+  PinkNum: 3
+  BlueNum: 3
+  YellowNum: 3
 --- !u!65 &8944912226164245907
 BoxCollider:
   m_ObjectHideFlags: 0
