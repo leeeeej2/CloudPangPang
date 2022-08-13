@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FeverTime.unity
     guid: 9604aa9be8e931b409609cb51f62429f
+  - enabled: 1
+    path: Assets/Scenes/SettingScene.unity
+    guid: fe3910af21ba00c4ca6d7bf8b1b025b1
   m_configObjects: {}

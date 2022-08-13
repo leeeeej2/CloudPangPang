@@ -6,10 +6,18 @@ using UnityEngine.SceneManagement;
 public class MoveScene : MonoBehaviour
 {
     public static bool addOnce = true;
+    public static bool isGamePause = false;
+
+    public static string currentScene;
+
+    private void Awake()
+    {
+        //currentScene = SceneManager.GetActiveScene();
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
-
         //reset all data to start new game
         Score.score = 0;
         Score.enemyDie = 2;
@@ -83,5 +91,23 @@ public class MoveScene : MonoBehaviour
             addOnce = false;
         }
 
+    }
+
+    public static void PauseGame()
+    {
+        currentScene = SceneManager.GetActiveScene().name;
+        Debug.Log("Curr Scene" + currentScene);
+        Time.timeScale = 0;
+        isGamePause = true;
+        SceneManager.LoadScene("SettingScene");
+        Debug.Log("pause");
+    }
+
+    public static void ResumeGame()
+    {
+        Time.timeScale = 1;
+        isGamePause = false;
+        SceneManager.LoadScene(currentScene);
+        Debug.Log(currentScene);
     }
 }
