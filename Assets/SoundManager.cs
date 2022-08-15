@@ -10,15 +10,45 @@ public class Sound{
 
 public class SoundManager : MonoBehaviour
 {
+    public static SoundManager instance;
+
     [Header("Sound application")]
     [SerializeField] Sound[] bgmSounds;
+    [SerializeField] Sound[] sfxSounds;
 
     [Header("BGM player")]
     [SerializeField] AudioSource bgmPlayer;
+
+    [Header("sfx player")]
+    [SerializeField] AudioSource[] sfxPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         PlayBGM();
+    }
+
+    public void PlaySfx(string nameSound)
+    {
+        for(int i = 0; i < sfxSounds.Length; i++)
+        {
+            if(nameSound == sfxSounds[i].soundName)
+            {
+                for(int j = 0; j < sfxPlayer.Length; j++)
+                {
+                    if(!sfxPlayer[j].isPlaying)
+                    {
+                        sfxPlayer[j].clip = sfxSounds[i].clip;
+                        sfxPlayer[j].Play();
+                        return;
+                    }
+                }
+                Debug.Log("All sfxPlayer is using!");
+                return;
+            }
+        }
+        Debug.Log("There is no sfxSound that matched with soundname");
     }
 
     public void PlayBGM()
