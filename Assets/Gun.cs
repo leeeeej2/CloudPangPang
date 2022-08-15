@@ -19,6 +19,7 @@ public class Gun : MonoBehaviour
         //if (Input.GetMouseButtonDown(0))
         if(ManageFire.IsPressed && (EatCloud.ammoCount > 0))
         { 
+            SoundManager.instance.PlaySfx("Fire");
             shootCamera = true;
             //EatCloud.totalCount -= EatCloud.perCloud;
             //EatCloud.ammoCount = (EatCloud.totalCount/EatCloud.perCloud);
