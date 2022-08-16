@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MoveScene : MonoBehaviour
 {
     public static bool addOnce = true;
     public static bool isGamePause = false;
-
+    public Slider volSlider;
+    float sibal;
+    public static float soundVolumeControl = 0.5f;
     public static string currentScene;
 
     private void Awake()
@@ -15,6 +18,15 @@ public class MoveScene : MonoBehaviour
         //currentScene = SceneManager.GetActiveScene();
     }
 
+    private void Start()
+    {
+        volSlider.value = PlayerPrefs.GetFloat("volvol", 0.5f);
+    }
+
+    private void Update()
+    {
+        
+    }
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
@@ -45,9 +57,10 @@ public class MoveScene : MonoBehaviour
 
     public void QuitGame()
     {
+        PlayerPrefs.SetFloat("volvol", 0.5f);
 
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
+    #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
         #else
                 Application.Quit(); 
         #endif
@@ -109,5 +122,13 @@ public class MoveScene : MonoBehaviour
         isGamePause = false;
         SceneManager.LoadScene(currentScene);
         Debug.Log(currentScene);
+    }
+
+    public void SetBGMVolume(float slider)
+    {
+        volSlider.value = slider;
+        //Debug.Log("volume is " + volSlider.value);
+        soundVolumeControl = volSlider.value;
+        PlayerPrefs.SetFloat("volvol", volSlider.value);
     }
 }
