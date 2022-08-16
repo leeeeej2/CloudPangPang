@@ -8,6 +8,7 @@ public class ItemManager : MonoBehaviour
 
     public void PressHeart()
     {
+        SoundManager.instance.PlaySfx("Pop");
         EatCloud.stopPink = false;
         EatCloud.pinkCount = 0;
         if(HealthManager.lifeSystem < 3)
@@ -18,6 +19,7 @@ public class ItemManager : MonoBehaviour
 
     public void PressBomb()
     {
+        SoundManager.instance.PlaySfx("Pop");
         EatCloud.stopBlue = false;
         EatCloud.blueCount = 0;
         Debug.Log("PressBomB");
@@ -31,6 +33,7 @@ public class ItemManager : MonoBehaviour
 
     public void PressSun()
     {
+        SoundManager.instance.PlaySfx("Pop");
         EatCloud.stopYellow = false;
         EatCloud.yellowCount = 0;
 

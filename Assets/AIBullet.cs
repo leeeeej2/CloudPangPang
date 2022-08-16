@@ -20,6 +20,7 @@ public class AIBullet : MonoBehaviour
         
         if(other.gameObject.name == "aircraft-A-A")
         {
+            SoundManager.instance.PlaySfx("Damage");
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

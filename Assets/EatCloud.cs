@@ -139,6 +139,7 @@ public class EatCloud : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        SoundManager.instance.PlaySfx("CloudEat");
         if(other.gameObject.name == "aircraft-A-A")
         {
             currentCol = GetComponent<MeshRenderer>().material.color;
@@ -160,6 +161,7 @@ public class EatCloud : MonoBehaviour
                     cloud.GetComponent<Text>().text = whiteCount.ToString();
                     ammoCount += 3;
                     ammo.GetComponent<Text>().text = ammoCount.ToString();
+                    SoundManager.instance.PlaySfx("Reload");
                 }
             }
             else if(currentCol == makeCloud.yellow)
@@ -175,6 +177,7 @@ public class EatCloud : MonoBehaviour
                     {
                         stopYellow = true;
                         sun.transform.position = new Vector3(sun.transform.position.x, 0, sun.transform.position.z);
+                        SoundManager.instance.PlaySfx("ItemGenerate");
                     }
                 }
 
@@ -192,6 +195,7 @@ public class EatCloud : MonoBehaviour
                     {
                         stopPink = true;
                         heart.transform.position = new Vector3(heart.transform.position.x, 0, heart.transform.position.z);
+                        SoundManager.instance.PlaySfx("ItemGenerate");
                     }
                 }
                 
@@ -209,6 +213,7 @@ public class EatCloud : MonoBehaviour
                     {
                         stopBlue = true;
                         bomb.transform.position = new Vector3(bomb.transform.position.x, 0, bomb.transform.position.z);
+                        SoundManager.instance.PlaySfx("ItemGenerate");
                     }
                 }
 

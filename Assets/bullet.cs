@@ -21,7 +21,7 @@ public class bullet : MonoBehaviour
         else if (other.gameObject.name == "Enemy(Clone)")
         {
             //Debug.Log("attack");
-
+            SoundManager.instance.PlaySfx("Damage");
             if (Score.enemyDie == 0)
             {
                 Debug.Log("collision with Enemy");

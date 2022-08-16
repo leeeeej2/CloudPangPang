@@ -82,6 +82,7 @@ public class AIAttack : MonoBehaviour
 
         if(!alreadyAttacked)
         {
+            SoundManager.instance.PlaySfx("EnemyFire");
             //Attack
             GameObject currentBullet = Instantiate(AIbullet, shootPoint.position, shootPoint.rotation);
             Rigidbody rig = currentBullet.GetComponent<Rigidbody>();
