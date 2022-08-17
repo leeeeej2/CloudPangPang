@@ -73,6 +73,7 @@ public class SoundManager : MonoBehaviour
                 {
                     if(!sfxPlayer[j].isPlaying)
                     {
+                        sfxPlayer[j].volume = MoveScene.soundVolumeControl;
                         sfxPlayer[j].clip = sfxSounds[i].clip;
                         sfxPlayer[j].Play();
                         return;

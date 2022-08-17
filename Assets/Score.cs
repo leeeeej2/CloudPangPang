@@ -26,7 +26,7 @@ public class Score : MonoBehaviour
             GameObject.Find("firstScore").GetComponent<Text>().text = BestScore.rankingScore[1].ToString();
             GameObject.Find("secondScore").GetComponent<Text>().text = BestScore.rankingScore[2].ToString();
 
-            if (Input.GetKey(KeyCode.Y))
+            if (Input.GetKeyDown(KeyCode.Y))
             {
                 PlayerPrefs.DeleteAll();
                 Debug.Log("remove all playerfrab data");

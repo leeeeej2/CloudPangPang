@@ -42,6 +42,13 @@ public class makeCloud : MonoBehaviour
 
     public Color[] myColors;
     public Color pickColor;
+
+    int colorPer = 0;
+
+    public int whitePer = 35;  //35
+    public int pinkPer = 65;   //30
+    public int bluePer = 90;   //25
+    public int yellowPer = 100; //10
     //public Renderer myRenderer;
 
 
@@ -106,13 +113,32 @@ public class makeCloud : MonoBehaviour
             //{
                 newCloud = Instantiate(cloud);
             //}
-            
+
             //if(whatType == 1)
             //{
             //    newCloud = Instantiate(cloud2);
             //}
+            colorPer = Random.RandomRange(0, 100);
 
-            pickColor = myColors[Random.Range(0, myColors.Length)];
+            //pickColor = myColors[Random.Range(0, myColors.Length)];
+
+            if(colorPer < whitePer)
+            {
+                pickColor = myColors[0];
+            }
+            else if(colorPer < pinkPer)
+            {
+                pickColor = myColors[2];
+            }
+            else if(colorPer < bluePer)
+            {
+                pickColor = myColors[3];
+            }
+            else
+            {
+                pickColor = myColors[1];
+            }
+
             newCloud.GetComponent<MeshRenderer>().material.color = pickColor;
 
             newCloud.gameObject.tag = "cloudsClone";

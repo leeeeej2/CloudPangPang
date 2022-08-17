@@ -9,7 +9,7 @@ public class MoveScene : MonoBehaviour
     public static bool addOnce = true;
     public static bool isGamePause = false;
     public Slider volSlider;
-    float sibal;
+    public static Material curSky;
     public static float soundVolumeControl = 0.5f;
     public static string currentScene;
 
@@ -52,8 +52,9 @@ public class MoveScene : MonoBehaviour
 
         HealthManager.lifeSystem = 3;
         HealthManager.unlimitedMood = false;
-        //
-}
+
+        curSky = null;
+    }
 
     public void QuitGame()
     {
@@ -77,6 +78,8 @@ public class MoveScene : MonoBehaviour
 
     public static void GoFeverTime()
     {
+        curSky = GameObject.Find("Main Camera").GetComponent<Skybox>().material;
+
         SceneManager.LoadScene("FeverTime");
         addOnce = true;
 
@@ -109,6 +112,7 @@ public class MoveScene : MonoBehaviour
     public static void PauseGame()
     {
         currentScene = SceneManager.GetActiveScene().name;
+        curSky = GameObject.Find("Main Camera").GetComponent<Skybox>().material;
         Debug.Log("Curr Scene" + currentScene);
         Time.timeScale = 0;
         isGamePause = true;

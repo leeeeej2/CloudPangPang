@@ -19,6 +19,8 @@ public class ItemManager : MonoBehaviour
 
     public void PressBomb()
     {
+        int count = 0;
+
         SoundManager.instance.PlaySfx("Pop");
         EatCloud.stopBlue = false;
         EatCloud.blueCount = 0;
@@ -27,8 +29,11 @@ public class ItemManager : MonoBehaviour
         clones = GameObject.FindGameObjectsWithTag("cloudsClone");
         foreach(var c in clones)
         {
+            count++;
             DestroyImmediate(c, true);
         }
+
+        Score.score += count;
     }
 
     public void PressSun()
