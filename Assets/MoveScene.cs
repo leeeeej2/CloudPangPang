@@ -61,6 +61,7 @@ public class MoveScene : MonoBehaviour
 
     public void QuitGame()
     {
+        SoundManager.instance.PlayBGM(1);
         PlayerPrefs.SetFloat("volvol", 0.5f);
 
     #if UNITY_EDITOR
