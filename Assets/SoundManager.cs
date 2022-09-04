@@ -44,7 +44,7 @@ public class SoundManager : MonoBehaviour
             isPlaying = true;
             instance = this;
             bgmPlayer.volume = 0.5f;
-            PlayBGM();
+            PlayBGM(1);
             DontDestroyOnLoad(transform.gameObject);
         }
 
@@ -86,10 +86,16 @@ public class SoundManager : MonoBehaviour
         Debug.Log("There is no sfxSound that matched with soundname");
     }
 
-    public void PlayBGM()
+    public void PlayBGM(int index)
     {
-        bgmPlayer.clip = bgmSounds[0].clip;
+        bgmPlayer.clip = bgmSounds[index].clip;
         bgmPlayer.Play();
+    }
+
+    public void StopBGM(int index)
+    {
+        bgmPlayer.clip = bgmSounds[index].clip;
+        bgmPlayer.Stop();
     }
 
     public void SetBGMVolume(float slider)

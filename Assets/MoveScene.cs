@@ -29,6 +29,9 @@ public class MoveScene : MonoBehaviour
     }
     public void StartGame()
     {
+        SoundManager.instance.StopBGM(1);
+        SoundManager.instance.PlayBGM(0);
+
         SceneManager.LoadScene("SampleScene");
         //reset all data to start new game
         Score.score = 0;
@@ -69,6 +72,9 @@ public class MoveScene : MonoBehaviour
 
     public static void GameOver()
     {
+        SoundManager.instance.StopBGM(0);
+        SoundManager.instance.PlaySfx("GameOver");
+
         BestScore.bestScore = PlayerPrefs.GetInt("BestScore", 0);
         //bestName = PlayerPrefs.GetString("BestName", "hagyeong");
 

@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
     public static int score = 0;
     public static int enemyDie = 2;
     public static int feverScore = 0;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,12 @@ public class Score : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name == "GameOver")
         {
+            //if(!GameOverCheck)
+            {
+                //GameOverCheck = true;
+                
+            }
+            
             GameObject.Find("bestbest").GetComponent<Text>().text = BestScore.bestScore.ToString();
             GameObject.Find("curcur").GetComponent<Text>().text = score.ToString();
             GameObject.Find("firstScore").GetComponent<Text>().text = BestScore.rankingScore[1].ToString();
