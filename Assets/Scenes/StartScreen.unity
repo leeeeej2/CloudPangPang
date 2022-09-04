@@ -1987,6 +1987,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c17aae3515d2b794bb3a2d627ac8ebbf, type: 3}
   - soundName: GameOver
     clip: {fileID: 8300000, guid: 3180b5658663a794d87dc933ae792caf, type: 3}
+  - soundName: Sun
+    clip: {fileID: 8300000, guid: 45300beded37f26479d7253ef38a4357, type: 3}
   bgmPlayer: {fileID: 1930209966}
   sfxPlayer:
   - {fileID: 1930209965}

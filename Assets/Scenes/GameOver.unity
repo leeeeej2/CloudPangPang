@@ -1755,6 +1755,8 @@ MonoBehaviour:
   bgmSounds:
   - soundName: BGM
     clip: {fileID: 8300000, guid: 7eaeca053f30aec4bbf9e860094a1d0e, type: 3}
+  - soundName: StartMenuBGM
+    clip: {fileID: 8300000, guid: 0e670ca5be897924aa6c1eb4b74498ba, type: 3}
   sfxSounds:
   - soundName: Fire
     clip: {fileID: 8300000, guid: 2a7d22daf60bd694ea2d65fe8dc56043, type: 3}
@@ -1772,6 +1774,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c17aae3515d2b794bb3a2d627ac8ebbf, type: 3}
   - soundName: GameOver
     clip: {fileID: 8300000, guid: 3180b5658663a794d87dc933ae792caf, type: 3}
+  - soundName: Sun
+    clip: {fileID: 8300000, guid: 45300beded37f26479d7253ef38a4357, type: 3}
   bgmPlayer: {fileID: 808673877}
   sfxPlayer:
   - {fileID: 808673876}

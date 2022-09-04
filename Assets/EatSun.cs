@@ -20,6 +20,7 @@ public class EatSun : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.name == "aircraft-A-A")
         {
+            SoundManager.instance.PlaySfx("Sun");
             this.gameObject.SetActive(false);
             //Debug.Log("Sun Collider");
             Score.feverScore++;
