@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class forLogoScene : MonoBehaviour
 {
     float timer = 0;
@@ -19,6 +20,13 @@ public class forLogoScene : MonoBehaviour
         timer += Time.deltaTime;
 
         if(timer > 2)
+        {
+            transform.SetSiblingIndex(0);
+            //gameObject.SetActive(false);
+            //this.transform.position = new Vector3(500, 500, 500);
+        }
+
+        if (timer > 4)
         {
             SceneManager.LoadScene("StartScreen");
             timer = 0;
